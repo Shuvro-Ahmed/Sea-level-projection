@@ -1,0 +1,32 @@
+{
+  "last_run_timestamp": "20260312_120821",
+  "system_risk_level": "GREEN",
+  "accel_run_counts": {
+    "Bangladesh": 0,
+    "Vietnam": 0,
+    "Maldives": 0
+  },
+  "countries": {
+    "Bangladesh": {
+      "risk_level": "GREEN",
+      "current_rise_mm": 108.677,
+      "acceleration_detected": false,
+      "compound_prob_annual": 0.091927,
+      "last_observation_date": "2024-12-01"
+    },
+    "Vietnam": {
+      "risk_level": "GREEN",
+      "current_rise_mm": 0.0,
+      "acceleration_detected": false,
+      "compound_prob_annual": 0.1,
+      "last_observation_date": "2022-12-01"
+    },
+    "Maldives": {
+      "risk_level": "GREEN",
+      "current_rise_mm": 0.0,
+      "acceleration_detected": false,
+      "compound_prob_annual": 0.2,
+      "last_observation_date": "2022-12-01"
+    }
+  }
+}

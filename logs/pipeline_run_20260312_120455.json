@@ -1,0 +1,970 @@
+{
+  "run_timestamp": "20260312_120455",
+  "pipeline_status": "SUCCESS",
+  "halt_at_cell": null,
+  "total_runtime_s": 209.17,
+  "steps_total": 7,
+  "steps_executed": 7,
+  "steps_passed": 7,
+  "steps_failed": 0,
+  "step_results": [
+    {
+      "cell": 33,
+      "name": "Autonomous Data Ingestion",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:04:55.974320+00:00",
+      "end_ts": "2026-03-12T12:05:32.243435+00:00",
+      "runtime_s": 36.27,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "psmsl_latest.csv": "566dca6a5259dc561a73236d646f5d5b",
+        "ingestion_log.csv": "0756793884d1c2814cc13a175f789b89"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_120511",
+        "cmems": {
+          "success": true,
+          "estimated_records": 0,
+          "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/cmems_latest.nc"
+        },
+        "psmsl": {
+          "success": true,
+          "total_records": 4185,
+          "records_by_country": {
+            "Bangladesh": 2675,
+            "Vietnam": 1128,
+            "Maldives": 382
+          },
+          "date_ranges": {
+            "Bangladesh": {
+              "start": "1932-02-01",
+              "end": "2024-12-01"
+            },
+            "Maldives": {
+              "start": "1987-03-01",
+              "end": "2018-12-01"
+            },
+            "Vietnam": {
+              "start": "1957-02-01",
+              "end": "2013-12-01"
+            }
+          },
+          "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/psmsl_latest.csv"
+        },
+        "validation": {
+          "all_passed": true,
+          "by_country": {
+            "Bangladesh": {
+              "source": "PSMSL_Bangladesh",
+              "total_rows": 2675,
+              "passed": true,
+              "missing_frac": 0.092,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            },
+            "Maldives": {
+              "source": "PSMSL_Maldives",
+              "total_rows": 382,
+              "passed": true,
+              "missing_frac": 0.0576,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            },
+            "Vietnam": {
+              "source": "PSMSL_Vietnam",
+              "total_rows": 1128,
+              "passed": true,
+              "missing_frac": 0.0062,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            }
+          }
+        },
+        "log_file": "/content/drive/MyDrive/BD_ML_VT/logs/ingestion_log.csv"
+      }
+    },
+    {
+      "cell": 34,
+      "name": "Automated Feature Engineering",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:05:32.251170+00:00",
+      "end_ts": "2026-03-12T12:05:36.108754+00:00",
+      "runtime_s": 3.86,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "features_latest.csv": "571ad39e65ec8fff59c2ddad8b5bcc18",
+        "merged_dataset.csv": "c82e82fd6270c9abfeb5bd6eb7237f2f",
+        "feature_engineering_log.csv": "e3a3bf4a981e9550876b3ca631d3fd26"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_120532",
+        "historical_rows": 2628,
+        "live_feature_rows": 1434,
+        "merged_rows": 2644,
+        "countries_processed": [
+          "Bangladesh",
+          "Maldives",
+          "Vietnam"
+        ],
+        "feature_columns": [
+          "slrv2",
+          "tide_gauge",
+          "enso",
+          "aviso",
+          "cmip6_thermo",
+          "cmip6_glacier",
+          "momentum",
+          "residual",
+          "enso_x_aviso"
+        ],
+        "drift": {
+          "detected": true,
+          "max_psi": 18.99669,
+          "drifted_features": [
+            "slrv2",
+            "tide_gauge",
+            "enso",
+            "aviso",
+            "cmip6_thermo",
+            "cmip6_glacier",
+            "momentum",
+            "residual",
+            "enso_x_aviso"
+          ],
+          "psi_scores": {
+            "slrv2": 2.570086,
+            "tide_gauge": 18.963653,
+            "enso": 16.657252,
+            "aviso": 1.834021,
+            "cmip6_thermo": 18.972996,
+            "cmip6_glacier": 18.99669,
+            "momentum": 15.032314,
+            "residual": 18.969223,
+            "enso_x_aviso": 5.991749
+          }
+        },
+        "scaler_status": "UPDATED",
+        "outputs": {
+          "features_latest": "/content/drive/MyDrive/BD_ML_VT/live_data/features_latest.csv",
+          "merged_dataset": "/content/drive/MyDrive/BD_ML_VT/live_data/merged_dataset.csv",
+          "feature_log": "/content/drive/MyDrive/BD_ML_VT/logs/feature_engineering_log.csv",
+          "scaler_updated": "/content/drive/MyDrive/BD_ML_VT/processed/scaler_params_updated.json"
+        }
+      }
+    },
+    {
+      "cell": 35,
+      "name": "PINN Continual Learning",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:05:36.120317+00:00",
+      "end_ts": "2026-03-12T12:05:42.543347+00:00",
+      "runtime_s": 6.42,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "continual_learning_log.csv": "96060d0d933c32f9305ed8866ce9cf30"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_120536",
+        "device": "cpu",
+        "countries": {
+          "Bangladesh": {
+            "country": "Bangladesh",
+            "triggered": true,
+            "new_months": 16,
+            "updated_rmse": 80.212,
+            "original_rmse": 85.932,
+            "quality_passed": true,
+            "decision": "UPDATED",
+            "model_path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_120536.pt",
+            "best_val_loss": 0.5663593503096226,
+            "best_epoch": 1,
+            "error": null
+          },
+          "Vietnam": {
+            "country": "Vietnam",
+            "triggered": false,
+            "new_months": 0,
+            "updated_rmse": null,
+            "original_rmse": null,
+            "quality_passed": null,
+            "decision": null,
+            "model_path": null,
+            "best_val_loss": null,
+            "best_epoch": null,
+            "error": null
+          },
+          "Maldives": {
+            "country": "Maldives",
+            "triggered": false,
+            "new_months": 0,
+            "updated_rmse": null,
+            "original_rmse": null,
+            "quality_passed": null,
+            "decision": null,
+            "model_path": null,
+            "best_val_loss": null,
+            "best_epoch": null,
+            "error": null
+          }
+        },
+        "versioned_dir": "/content/drive/MyDrive/BD_ML_VT/models/versioned",
+        "cl_log": "/content/drive/MyDrive/BD_ML_VT/logs/continual_learning_log.csv",
+        "models_updated": [
+          "Bangladesh"
+        ],
+        "models_skipped": [
+          "Vietnam",
+          "Maldives"
+        ],
+        "models_rolledback": []
+      }
+    },
+    {
+      "cell": 36,
+      "name": "Risk Threshold Detection",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:05:42.545944+00:00",
+      "end_ts": "2026-03-12T12:05:42.977658+00:00",
+      "runtime_s": 0.43,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "risk_assessment_latest.json": "5b5d980fc6b0ef622369358d2b9b3432",
+        "risk_detection_log.csv": "fc391935d7f38aeba51a4e9bef3733e7"
+      },
+      "error": null,
+      "return_value": {
+        "report_timestamp": "20260312_120542",
+        "baseline_date": "2022-12-31",
+        "system_risk_level": "GREEN",
+        "any_acceleration": false,
+        "countries": {
+          "Bangladesh": {
+            "country": "Bangladesh",
+            "assessment_date": "20260312_120542",
+            "error": null,
+            "last_observation_date": "2024-12-01",
+            "current_rise_mm": 108.677,
+            "n_observations": 34,
+            "risk_level": "GREEN",
+            "thresholds_mm": {
+              "amber": 150,
+              "red": 250,
+              "critical": 350
+            },
+            "acceleration": {
+              "acceleration_detected": false,
+              "z_score": 1.6008,
+              "recent_slope_mm_yr": 68.1268,
+              "historical_mean_slope": -33.3253,
+              "historical_std_slope": 63.3761,
+              "window_months": 24,
+              "note": null
+            },
+            "compound_risk": {
+              "compound_prob_annual": 0.091927,
+              "slr_exceedance_prob": 0.533512,
+              "surge_exceedance_prob": 0.1,
+              "projected_slr_mm": 254.28,
+              "projection_year": 2050,
+              "theta_copula": 2.0,
+              "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+            },
+            "time_to_threshold": {
+              "years_to_amber": 7.4,
+              "years_to_red": 25.2,
+              "years_to_critical": 43.1,
+              "next_threshold": "amber",
+              "years_to_next": 7.4,
+              "rate_used_mm_yr": 5.6
+            },
+            "meta": {
+              "population_at_risk": 35000000,
+              "gdp_at_risk_bn_usd": 12.4,
+              "agri_exposure_km2": 14000,
+              "vlm_mm_yr": -2.0,
+              "cvi_score": 0.847
+            }
+          },
+          "Vietnam": {
+            "country": "Vietnam",
+            "assessment_date": "20260312_120542",
+            "error": null,
+            "last_observation_date": "2022-12-01",
+            "current_rise_mm": 0.0,
+            "n_observations": 18,
+            "risk_level": "GREEN",
+            "thresholds_mm": {
+              "amber": 100,
+              "red": 200,
+              "critical": 300
+            },
+            "acceleration": {
+              "acceleration_detected": false,
+              "z_score": 0.0,
+              "recent_slope_mm_yr": null,
+              "historical_mean_slope": null,
+              "historical_std_slope": null,
+              "window_months": 24,
+              "note": "Insufficient data for acceleration detection."
+            },
+            "compound_risk": {
+              "compound_prob_annual": 0.1,
+              "slr_exceedance_prob": 0.998255,
+              "surge_exceedance_prob": 0.1,
+              "projected_slr_mm": 481.0,
+              "projection_year": 2050,
+              "theta_copula": 2.0,
+              "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+            },
+            "time_to_threshold": {
+              "years_to_amber": 5.4,
+              "years_to_red": 10.8,
+              "years_to_critical": 16.2,
+              "next_threshold": "amber",
+              "years_to_next": 5.4,
+              "rate_used_mm_yr": 18.5
+            },
+            "meta": {
+              "population_at_risk": 20000000,
+              "gdp_at_risk_bn_usd": 8.7,
+              "agri_exposure_km2": 9500,
+              "vlm_mm_yr": -8.9,
+              "cvi_score": 0.793
+            }
+          },
+          "Maldives": {
+            "country": "Maldives",
+            "assessment_date": "20260312_120542",
+            "error": null,
+            "last_observation_date": "2022-12-01",
+            "current_rise_mm": 0.0,
+            "n_observations": 18,
+            "risk_level": "GREEN",
+            "thresholds_mm": {
+              "amber": 50,
+              "red": 80,
+              "critical": 100
+            },
+            "acceleration": {
+              "acceleration_detected": false,
+              "z_score": 0.0,
+              "recent_slope_mm_yr": null,
+              "historical_mean_slope": null,
+              "historical_std_slope": null,
+              "window_months": 24,
+              "note": "Insufficient data for acceleration detection."
+            },
+            "compound_risk": {
+              "compound_prob_annual": 0.2,
+              "slr_exceedance_prob": 0.99976,
+              "surge_exceedance_prob": 0.2,
+              "projected_slr_mm": 265.2,
+              "projection_year": 2050,
+              "theta_copula": 2.0,
+              "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+            },
+            "time_to_threshold": {
+              "years_to_amber": 4.9,
+              "years_to_red": 7.8,
+              "years_to_critical": 9.8,
+              "next_threshold": "amber",
+              "years_to_next": 4.9,
+              "rate_used_mm_yr": 10.2
+            },
+            "meta": {
+              "population_at_risk": 500000,
+              "gdp_at_risk_bn_usd": 0.9,
+              "agri_exposure_km2": 80,
+              "vlm_mm_yr": 0.0,
+              "cvi_score": 0.921
+            }
+          }
+        },
+        "risk_levels_summary": {
+          "Bangladesh": "GREEN",
+          "Vietnam": "GREEN",
+          "Maldives": "GREEN"
+        },
+        "pipeline_version": "HyperSLR-Cell36"
+      }
+    },
+    {
+      "cell": 37,
+      "name": "LLM Recommendation Engine",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:05:42.981831+00:00",
+      "end_ts": "2026-03-12T12:08:15.832614+00:00",
+      "runtime_s": 152.85,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "recommendations_latest.json": "eaece9f5631b515e98caa3e0c258a29b",
+        "recommendations_latest.md": "bb85a89e51c8d250172aee63ec8135a2",
+        "llm_recommendation_log.csv": "ea37291ed04736ae1eb407c9801b5c3b"
+      },
+      "error": null,
+      "return_value": {
+        "provider": "offline-template",
+        "total_measures": 17,
+        "total_policies": 14,
+        "outputs": {
+          "json_latest": "/content/drive/MyDrive/BD_ML_VT/risk_reports/recommendations_latest.json",
+          "json_timestamped": "/content/drive/MyDrive/BD_ML_VT/risk_reports/recommendations_20260312_120543.json",
+          "markdown": "/content/drive/MyDrive/BD_ML_VT/risk_reports/recommendations_latest.md",
+          "rec_log": "/content/drive/MyDrive/BD_ML_VT/logs/llm_recommendation_log.csv"
+        },
+        "recommendations": {
+          "report_metadata": {
+            "generated_by": "offline-template",
+            "generation_ts": "2026-03-12T12:08:15.803426+00:00",
+            "baseline_date": "2022-12-31",
+            "system_risk_level": "GREEN",
+            "audience": "National coastal adaptation planners"
+          },
+          "five_year_adaptation_measures": {
+            "Bangladesh": [
+              {
+                "measure": "Coastal Early Warning System Upgrade",
+                "rationale": "Bangladesh has recorded 108.7 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.0919 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+                "actions": [
+                  "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+                  "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+                  "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+                ],
+                "timeline": "2025-2026",
+                "priority": "HIGH",
+                "cost_tier": "MEDIUM"
+              },
+              {
+                "measure": "Mangrove and Coastal Ecosystem Restoration",
+                "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 108.7 mm rise already observed.",
+                "actions": [
+                  "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+                  "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+                  "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+                ],
+                "timeline": "2025-2027",
+                "priority": "HIGH",
+                "cost_tier": "LOW"
+              },
+              {
+                "measure": "Climate-Resilient Infrastructure Standards",
+                "rationale": "With 7.4 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+                "actions": [
+                  "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+                  "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+                  "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+                ],
+                "timeline": "2025-2028",
+                "priority": "HIGH",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Managed Coastal Retreat Planning",
+                "rationale": "CVI of 0.847 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+                "actions": [
+                  "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+                  "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+                  "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+                ],
+                "timeline": "2026-2030",
+                "priority": "MEDIUM",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Subsidence Monitoring and Groundwater Governance",
+                "rationale": "VLM rate of -2.0 mm/yr significantly amplifies effective SLR beyond global mean, requiring dedicated monitoring and governance response.",
+                "actions": [
+                  "Install continuous GNSS benchmarks at 10 coastal locations to monitor vertical land motion quarterly.",
+                  "Regulate groundwater extraction in coastal aquifer zones demonstrating >5 mm/yr subsidence rates.",
+                  "Publish annual VLM monitoring report informing local government land use decisions."
+                ],
+                "timeline": "2025-2027",
+                "priority": "MEDIUM",
+                "cost_tier": "MEDIUM"
+              }
+            ],
+            "Vietnam": [
+              {
+                "measure": "Coastal Early Warning System Upgrade",
+                "rationale": "Vietnam has recorded 0.0 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.1000 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+                "actions": [
+                  "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+                  "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+                  "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+                ],
+                "timeline": "2025-2026",
+                "priority": "HIGH",
+                "cost_tier": "MEDIUM"
+              },
+              {
+                "measure": "Mangrove and Coastal Ecosystem Restoration",
+                "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 0.0 mm rise already observed.",
+                "actions": [
+                  "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+                  "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+                  "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+                ],
+                "timeline": "2025-2027",
+                "priority": "HIGH",
+                "cost_tier": "LOW"
+              },
+              {
+                "measure": "Climate-Resilient Infrastructure Standards",
+                "rationale": "With 5.4 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+                "actions": [
+                  "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+                  "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+                  "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+                ],
+                "timeline": "2025-2028",
+                "priority": "MEDIUM",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Managed Coastal Retreat Planning",
+                "rationale": "CVI of 0.793 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+                "actions": [
+                  "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+                  "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+                  "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+                ],
+                "timeline": "2026-2030",
+                "priority": "MEDIUM",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Subsidence Monitoring and Groundwater Governance",
+                "rationale": "VLM rate of -8.9 mm/yr significantly amplifies effective SLR beyond global mean, requiring dedicated monitoring and governance response.",
+                "actions": [
+                  "Install continuous GNSS benchmarks at 10 coastal locations to monitor vertical land motion quarterly.",
+                  "Regulate groundwater extraction in coastal aquifer zones demonstrating >5 mm/yr subsidence rates.",
+                  "Publish annual VLM monitoring report informing local government land use decisions."
+                ],
+                "timeline": "2025-2027",
+                "priority": "HIGH",
+                "cost_tier": "MEDIUM"
+              }
+            ],
+            "Maldives": [
+              {
+                "measure": "Coastal Early Warning System Upgrade",
+                "rationale": "Maldives has recorded 0.0 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.2000 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+                "actions": [
+                  "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+                  "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+                  "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+                ],
+                "timeline": "2025-2026",
+                "priority": "HIGH",
+                "cost_tier": "MEDIUM"
+              },
+              {
+                "measure": "Mangrove and Coastal Ecosystem Restoration",
+                "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 0.0 mm rise already observed.",
+                "actions": [
+                  "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+                  "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+                  "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+                ],
+                "timeline": "2025-2027",
+                "priority": "HIGH",
+                "cost_tier": "LOW"
+              },
+              {
+                "measure": "Climate-Resilient Infrastructure Standards",
+                "rationale": "With 4.9 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+                "actions": [
+                  "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+                  "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+                  "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+                ],
+                "timeline": "2025-2028",
+                "priority": "HIGH",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Managed Coastal Retreat Planning",
+                "rationale": "CVI of 0.921 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+                "actions": [
+                  "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+                  "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+                  "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+                ],
+                "timeline": "2026-2030",
+                "priority": "MEDIUM",
+                "cost_tier": "HIGH"
+              },
+              {
+                "measure": "Sea-Level Monitoring Station Densification",
+                "rationale": "Continuous in-situ monitoring underpins all risk threshold detection and early warning systems.",
+                "actions": [
+                  "Commission 3 additional PSMSL-affiliated tide gauges in under-monitored coastal sectors.",
+                  "Establish data-sharing agreement with regional oceanographic agencies for real-time altimetry.",
+                  "Publish open-access coastal monitoring dashboard updated monthly."
+                ],
+                "timeline": "2025-2027",
+                "priority": "MEDIUM",
+                "cost_tier": "MEDIUM"
+              }
+            ],
+            "regional": [
+              {
+                "measure": "Bay of Bengal / Indian Ocean Regional SLR Monitoring Consortium",
+                "rationale": "Bangladesh, Vietnam, and the Maldives share oceanographic drivers (ENSO, IOD, thermosteric expansion) that are most efficiently monitored and modelled at regional scale.",
+                "actions": [
+                  "Formalise a tripartite data-sharing agreement linking national tide gauge networks under IOGOOS.",
+                  "Establish a shared CMEMS sub-regional altimetry processing pipeline updated monthly.",
+                  "Joint capacity-building programme for national hydrological services in PINN-based SLR forecasting."
+                ],
+                "timeline": "2026-2028",
+                "priority": "MEDIUM",
+                "cost_tier": "LOW"
+              },
+              {
+                "measure": "Regional Climate Displacement Protocol",
+                "rationale": "Maldivian and low-lying Bangladesh coastal populations face displacement scenarios that require pre-agreed regional frameworks before crisis conditions force ad-hoc responses.",
+                "actions": [
+                  "Commission a regional climate displacement needs assessment under SAARC / IORA auspices.",
+                  "Negotiate bilateral labour mobility agreements enabling climate-linked migration pathways.",
+                  "Establish a regional climate displacement fund with initial capitalisation from Green Climate Fund."
+                ],
+                "timeline": "2027-2030",
+                "priority": "MEDIUM",
+                "cost_tier": "MEDIUM"
+              }
+            ]
+          },
+          "policy_recommendations": {
+            "Bangladesh": [
+              {
+                "policy": "National Coastal Adaptation Plan (NAP) Update",
+                "rationale": "Existing NAPs predate the 108.7 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+                "instruments": [
+                  "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+                  "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+                ],
+                "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+                "rationale": "With 7.4 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+                "instruments": [
+                  "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+                  "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+                ],
+                "lead_agency": "Ministry of Land / Urban Planning Authority",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Climate Finance Mobilisation for Coastal Resilience",
+                "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+                "instruments": [
+                  "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+                  "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+                  "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+                ],
+                "lead_agency": "Ministry of Finance / Climate Change Unit",
+                "horizon": "medium (3-5yr)",
+                "urgency": "NEAR-TERM"
+              },
+              {
+                "policy": "Coastal Fisheries and Livelihood Transition Programme",
+                "rationale": "Coastal livelihood diversification reduces population exposure dependency and improves voluntary relocation uptake.",
+                "instruments": [
+                  "Aquaculture and mariculture development grants for coastal fishing communities.",
+                  "Social protection floor linked to coastal relocation to reduce resistance to managed retreat."
+                ],
+                "lead_agency": "Ministry of Fisheries / Social Affairs",
+                "horizon": "medium (3-5yr)",
+                "urgency": "STRATEGIC"
+              }
+            ],
+            "Vietnam": [
+              {
+                "policy": "National Coastal Adaptation Plan (NAP) Update",
+                "rationale": "Existing NAPs predate the 0.0 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+                "instruments": [
+                  "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+                  "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+                ],
+                "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+                "rationale": "With 5.4 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+                "instruments": [
+                  "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+                  "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+                ],
+                "lead_agency": "Ministry of Land / Urban Planning Authority",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Climate Finance Mobilisation for Coastal Resilience",
+                "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+                "instruments": [
+                  "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+                  "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+                  "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+                ],
+                "lead_agency": "Ministry of Finance / Climate Change Unit",
+                "horizon": "medium (3-5yr)",
+                "urgency": "NEAR-TERM"
+              },
+              {
+                "policy": "Groundwater Extraction Regulation in Coastal Aquifer Zones",
+                "rationale": "VLM of -8.9 mm/yr is substantially driven by groundwater abstraction in deltaic aquifers; regulatory intervention can reduce effective SLR by 2-4 mm/yr.",
+                "instruments": [
+                  "Groundwater extraction licensing with volumetric caps in designated coastal subsidence risk zones.",
+                  "Annual aquifer level monitoring with automatic permit suspension if drawdown exceeds thresholds."
+                ],
+                "lead_agency": "Ministry of Water Resources / Geological Survey",
+                "horizon": "medium (3-5yr)",
+                "urgency": "NEAR-TERM"
+              }
+            ],
+            "Maldives": [
+              {
+                "policy": "National Coastal Adaptation Plan (NAP) Update",
+                "rationale": "Existing NAPs predate the 0.0 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+                "instruments": [
+                  "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+                  "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+                ],
+                "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+                "rationale": "With 4.9 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+                "instruments": [
+                  "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+                  "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+                ],
+                "lead_agency": "Ministry of Land / Urban Planning Authority",
+                "horizon": "short (1-2yr)",
+                "urgency": "IMMEDIATE"
+              },
+              {
+                "policy": "Climate Finance Mobilisation for Coastal Resilience",
+                "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+                "instruments": [
+                  "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+                  "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+                  "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+                ],
+                "lead_agency": "Ministry of Finance / Climate Change Unit",
+                "horizon": "medium (3-5yr)",
+                "urgency": "NEAR-TERM"
+              },
+              {
+                "policy": "Coastal Fisheries and Livelihood Transition Programme",
+                "rationale": "Coastal livelihood diversification reduces population exposure dependency and improves voluntary relocation uptake.",
+                "instruments": [
+                  "Aquaculture and mariculture development grants for coastal fishing communities.",
+                  "Social protection floor linked to coastal relocation to reduce resistance to managed retreat."
+                ],
+                "lead_agency": "Ministry of Fisheries / Social Affairs",
+                "horizon": "medium (3-5yr)",
+                "urgency": "STRATEGIC"
+              }
+            ],
+            "regional": [
+              {
+                "policy": "UNFCCC National Adaptation Plan (NAP) Alignment and Joint Reporting",
+                "rationale": "Coordinated NAP submissions under the UNFCCC NAP process strengthen collective bargaining for adaptation finance and technical support.",
+                "instruments": [
+                  "Joint submission to UNFCCC NAP Technical Working Group presenting this HyperSLR system as shared MRV infrastructure.",
+                  "Coordinated Loss and Damage claims documentation using common HyperSLR baseline and risk metrics."
+                ],
+                "lead_agency": "UNFCCC National Focal Points / SAARC Environment Ministers",
+                "horizon": "medium (3-5yr)",
+                "urgency": "NEAR-TERM"
+              },
+              {
+                "policy": "Regional Catastrophe Risk Insurance Pool",
+                "rationale": "Individual national insurance markets lack the risk diversification to offer affordable coastal flood cover; a regional pool following the CCRIF model is viable.",
+                "instruments": [
+                  "Feasibility study for a Bay of Bengal / Indian Ocean Catastrophe Risk Pool modelled on CCRIF SPC.",
+                  "Parametric insurance product design using HyperSLR risk thresholds as trigger conditions."
+                ],
+                "lead_agency": "Regional Development Banks / Finance Ministries",
+                "horizon": "long (5-10yr)",
+                "urgency": "STRATEGIC"
+              }
+            ]
+          },
+          "critical_uncertainties": [
+            "SSP2-4.5 rate assumptions may underestimate acceleration if West Antarctic Ice Sheet instability progresses faster than IPCC AR6 median projections.",
+            "VLM rates for Bangladesh and Vietnam are based on sparse GNSS networks; true subsidence may exceed modelled rates in intensively pumped agricultural zones.",
+            "Compound event probability estimates assume stationarity of storm surge climatology; climate-driven intensification of tropical cyclones could increase return period frequencies.",
+            "Political will and institutional capacity for managed retreat remain the primary implementation bottleneck, not technical or financial constraints."
+          ],
+          "monitoring_triggers": [
+            {
+              "trigger": "Bangladesh cumulative rise reaches AMBER threshold",
+              "threshold": "150 mm above 2022-12-31 baseline",
+              "response_action": "Convene emergency NAP review; activate Tier 2 coastal protection budget; issue construction moratorium in RED exposure zone."
+            },
+            {
+              "trigger": "Vietnam or Maldives cumulative rise reaches 25 mm above baseline",
+              "threshold": "25 mm (50% of AMBER threshold)",
+              "response_action": "Initiate managed retreat site identification; accelerate early warning system deployment; trigger GCF project preparation funding."
+            },
+            {
+              "trigger": "Acceleration z-score exceeds 2.0 for any country",
+              "threshold": "z > 2.0 on 24-month rolling trend",
+              "response_action": "Revise SSP2-4.5 time-to-threshold projections upward; brief cabinet; engage IPCC WGI national focal point for expert assessment."
+            },
+            {
+              "trigger": "Annual compound event probability exceeds 5%",
+              "threshold": "compound_prob_annual > 0.05",
+              "response_action": "Declare coastal climate emergency; activate national disaster risk reduction budget supplementary allocation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cell": 38,
+      "name": "Dashboard and Publication Report",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:08:15.840800+00:00",
+      "end_ts": "2026-03-12T12:08:21.940669+00:00",
+      "runtime_s": 6.1,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "hypersrl_dashboard_latest.html": "c303b23bee7281ab421e4292f9b949d5",
+        "hypersrl_report_latest.pdf": "96cb8d64b45710abc5dbf3df95eadd04",
+        "dashboard_log.csv": "c4ccf71dd8dcc6a3151d7bd28dcdb48e"
+      },
+      "error": null,
+      "return_value": {
+        "timestamp": "20260312_120815",
+        "outputs": {
+          "html_latest": "/content/drive/MyDrive/BD_ML_VT/dashboards/hypersrl_dashboard_latest.html",
+          "html_timestamped": "/content/drive/MyDrive/BD_ML_VT/dashboards/hypersrl_dashboard_20260312_120815.html",
+          "pdf_latest": "/content/drive/MyDrive/BD_ML_VT/dashboards/hypersrl_report_latest.pdf",
+          "pdf_timestamped": "/content/drive/MyDrive/BD_ML_VT/dashboards/hypersrl_report_20260312_120815.pdf",
+          "dashboard_log": "/content/drive/MyDrive/BD_ML_VT/logs/dashboard_log.csv"
+        },
+        "panels": 7,
+        "html_kb": 4541,
+        "pdf_path": "/content/drive/MyDrive/BD_ML_VT/dashboards/hypersrl_report_latest.pdf"
+      }
+    },
+    {
+      "cell": 39,
+      "name": "Automated Alert System",
+      "status": "PASS",
+      "start_ts": "2026-03-12T12:08:21.961109+00:00",
+      "end_ts": "2026-03-12T12:08:25.128730+00:00",
+      "runtime_s": 3.17,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "alert_log.csv": "b1a85d0fb4292063321c21f61c8dde4e",
+        "alert_state.json": "a6640a3f1277e2b4da9d19b190915ade"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_120821",
+        "total_alerts": 3,
+        "by_severity": {
+          "INFO": 3
+        },
+        "by_class": {
+          "DATA_GAP": 3
+        },
+        "by_country": {
+          "Bangladesh": 1,
+          "Vietnam": 1,
+          "Maldives": 1
+        },
+        "dispatch_summary": {
+          "total_alerts": 3,
+          "log": "/content/drive/MyDrive/BD_ML_VT/logs/alert_log_20260312_120821.json",
+          "email": {
+            "attempted": true,
+            "success": false,
+            "detail": "SMTP auth failed. Check HYPERSRL_GMAIL_PASSWORD is a valid App Password (not account password). Error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-82a07340422sm2720098b3a.30 - gsmtp')"
+          }
+        },
+        "alerts": [
+          {
+            "alert_id": "20260312_120821_DATA_GAP_Bangladesh",
+            "timestamp": "20260312_120821",
+            "alert_class": "DATA_GAP",
+            "severity": "INFO",
+            "country": "Bangladesh",
+            "title": "Bangladesh: Data gap of 466 days (threshold: 90 days)",
+            "detail": "The most recent observation for Bangladesh is 2024-12-01 \u2014 466 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+            "metrics": {
+              "last_observation_date": "2024-12-01",
+              "gap_days": 466,
+              "threshold_days": 90
+            },
+            "dispatched": []
+          },
+          {
+            "alert_id": "20260312_120821_DATA_GAP_Vietnam",
+            "timestamp": "20260312_120821",
+            "alert_class": "DATA_GAP",
+            "severity": "INFO",
+            "country": "Vietnam",
+            "title": "Vietnam: Data gap of 1197 days (threshold: 90 days)",
+            "detail": "The most recent observation for Vietnam is 2022-12-01 \u2014 1197 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+            "metrics": {
+              "last_observation_date": "2022-12-01",
+              "gap_days": 1197,
+              "threshold_days": 90
+            },
+            "dispatched": []
+          },
+          {
+            "alert_id": "20260312_120821_DATA_GAP_Maldives",
+            "timestamp": "20260312_120821",
+            "alert_class": "DATA_GAP",
+            "severity": "INFO",
+            "country": "Maldives",
+            "title": "Maldives: Data gap of 1197 days (threshold: 90 days)",
+            "detail": "The most recent observation for Maldives is 2022-12-01 \u2014 1197 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+            "metrics": {
+              "last_observation_date": "2022-12-01",
+              "gap_days": 1197,
+              "threshold_days": 90
+            },
+            "dispatched": []
+          }
+        ],
+        "outputs": {
+          "alert_csv": "/content/drive/MyDrive/BD_ML_VT/logs/alert_log.csv",
+          "alert_state": "/content/drive/MyDrive/BD_ML_VT/logs/alert_state.json",
+          "alert_json": "/content/drive/MyDrive/BD_ML_VT/logs/alert_log_20260312_120821.json"
+        }
+      }
+    }
+  ]
+}

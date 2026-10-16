@@ -1,0 +1,10 @@
+Country,Model,RMSE_mm,MAE_mm,Skill_score
+Bangladesh,ARIMA,75.664,75.028,-256.85
+Bangladesh,SARIMA,10.198,7.791,-33.752
+Bangladesh,Prophet,82.447,81.605,-279.967
+Vietnam,ARIMA,45.944,45.385,-253.583
+Vietnam,SARIMA,40.323,39.958,-222.434
+Vietnam,Prophet,22.641,22.292,-124.459
+Maldives,ARIMA,67.249,65.965,-184.275
+Maldives,SARIMA,125.991,123.189,-346.113
+Maldives,Prophet,4.567,4.149,-11.584

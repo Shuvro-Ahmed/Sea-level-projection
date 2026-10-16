@@ -1,0 +1,37 @@
+Country,Feature,Label,Rank,Mean_SHAP,Std_SHAP
+Bangladesh,slrv2_msl_mm_norm,SLRv2 (reconstructed),1,0.005042,0.002668
+Bangladesh,cmip6_thermo_mm_norm,Thermosteric (CMIP6),2,0.003466,0.002715
+Bangladesh,physics_residual_mm_norm,Physics residual,3,0.003321,0.002423
+Bangladesh,cmip6_glacier_mm_norm,Glacier+ice (CMIP6),4,0.003298,0.001879
+Bangladesh,aviso_sla_mm_norm,AVISO altimetry,5,0.000918,0.00151
+Bangladesh,month_sin,Seasonality (sin),6,0.000734,0.001162
+Bangladesh,month_cos,Seasonality (cos),7,0.000726,0.001183
+Bangladesh,slr_momentum_mm_norm,SLR momentum,8,0.000712,0.00118
+Bangladesh,tide_gauge_mm_norm,Tide gauge,9,0.000583,0.00109
+Bangladesh,enso_anom_norm,ENSO index,10,0.000425,0.001023
+Bangladesh,enso_aviso_interact,ENSO×Altimetry,11,0.000317,0.000983
+Bangladesh,vlm_mm_yr_norm,Vertical land motion,12,0.0,0.0
+Vietnam,cmip6_thermo_mm_norm,Thermosteric (CMIP6),1,0.004777,0.002688
+Vietnam,slrv2_msl_mm_norm,SLRv2 (reconstructed),2,0.002918,0.002078
+Vietnam,cmip6_glacier_mm_norm,Glacier+ice (CMIP6),3,0.002718,0.002092
+Vietnam,aviso_sla_mm_norm,AVISO altimetry,4,0.002699,0.002427
+Vietnam,physics_residual_mm_norm,Physics residual,5,0.00141,0.001652
+Vietnam,enso_aviso_interact,ENSO×Altimetry,6,0.001109,0.001457
+Vietnam,month_sin,Seasonality (sin),7,0.000697,0.001291
+Vietnam,tide_gauge_mm_norm,Tide gauge,8,0.000694,0.000997
+Vietnam,slr_momentum_mm_norm,SLR momentum,9,0.0006,0.000958
+Vietnam,enso_anom_norm,ENSO index,10,0.000563,0.000996
+Vietnam,month_cos,Seasonality (cos),11,0.000363,0.001028
+Vietnam,vlm_mm_yr_norm,Vertical land motion,12,0.0,0.0
+Maldives,slrv2_msl_mm_norm,SLRv2 (reconstructed),1,0.004407,0.00247
+Maldives,cmip6_glacier_mm_norm,Glacier+ice (CMIP6),2,0.003993,0.002686
+Maldives,cmip6_thermo_mm_norm,Thermosteric (CMIP6),3,0.003455,0.002352
+Maldives,physics_residual_mm_norm,Physics residual,4,0.001428,0.001325
+Maldives,aviso_sla_mm_norm,AVISO altimetry,5,0.001146,0.001542
+Maldives,tide_gauge_mm_norm,Tide gauge,6,0.000827,0.001235
+Maldives,enso_aviso_interact,ENSO×Altimetry,7,0.000614,0.001169
+Maldives,month_cos,Seasonality (cos),8,0.00051,0.001003
+Maldives,month_sin,Seasonality (sin),9,0.0005,0.000978
+Maldives,enso_anom_norm,ENSO index,10,0.000463,0.001034
+Maldives,slr_momentum_mm_norm,SLR momentum,11,0.000417,0.00098
+Maldives,vlm_mm_yr_norm,Vertical land motion,12,0.0,0.0

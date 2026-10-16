@@ -1,0 +1,4 @@
+Country,Baseline_mm,Trend_rise_mm,LSTM_rise_2050,PINN_rise_2050,SARIMA_rise_2050,LSTM_violations,PINN_violations
+Bangladesh,7183.1,6.8,4.1,3.8,38.0,None,None
+Vietnam,7074.8,102.0,98.5,99.0,-43.5,None,None
+Maldives,7143.7,197.5,198.2,195.5,-183.7,None,None

@@ -1,0 +1,28 @@
+{
+  "run_timestamp": "20260311_134016",
+  "pipeline_status": "FAILED",
+  "halt_at_cell": 33,
+  "total_runtime_s": 0.04,
+  "steps_total": 7,
+  "steps_executed": 1,
+  "steps_passed": 0,
+  "steps_failed": 1,
+  "step_results": [
+    {
+      "cell": 33,
+      "name": "Autonomous Data Ingestion",
+      "status": "FAIL",
+      "start_ts": "2026-03-11T13:40:16.913072+00:00",
+      "end_ts": "2026-03-11T13:40:16.927061+00:00",
+      "runtime_s": 0.01,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "psmsl_latest.csv": "566dca6a5259dc561a73236d646f5d5b",
+        "ingestion_log.csv": "afc42a5cfb3a119c781329edfeedec83"
+      },
+      "error": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_136/3301074570.py\", line 269, in execute_step\n    module      = _load_module_from_path(cell_num, module_path)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_136/3301074570.py\", line 224, in _load_module_from_path\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/content/drive/MyDrive/BD_ML_VT/cells/cell33.py\", line 2\n    20260308_105224,CMEMS,SKIPPED,0,dry_run=True,\n                                    ^^^^^^^^^^^^\nSyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?\n",
+      "return_value": null
+    }
+  ]
+}

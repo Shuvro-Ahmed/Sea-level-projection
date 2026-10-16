@@ -1,0 +1,4 @@
+experiment_id,run_timestamp,system_risk_level,any_acceleration,bangladesh_rise_mm,n_checkpoints,pipeline_status,provenance_hash,python_version,runtime,gpu
+hypersrl_20260311_140639,20260311_140639,GREEN,False,108.677,5,FAILED,ebc8f0c0d64cc3644bb58043c7c3d42a,3.12.12,Google Colab,CPU only
+hypersrl_20260311_141154,20260311_141154,GREEN,False,108.677,5,FAILED,ebc8f0c0d64cc3644bb58043c7c3d42a,3.12.12,Google Colab,CPU only
+hypersrl_20260312_112009,20260312_112009,GREEN,False,108.677,10,FAILED,efe9b1182ae9def1c1e5227bf76f2b58,3.12.12,Google Colab,CPU only

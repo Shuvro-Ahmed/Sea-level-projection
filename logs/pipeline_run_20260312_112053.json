@@ -1,0 +1,251 @@
+{
+  "run_timestamp": "20260312_112053",
+  "pipeline_status": "FAILED",
+  "halt_at_cell": 36,
+  "total_runtime_s": 54.97,
+  "steps_total": 7,
+  "steps_executed": 4,
+  "steps_passed": 3,
+  "steps_failed": 1,
+  "step_results": [
+    {
+      "cell": 33,
+      "name": "Autonomous Data Ingestion",
+      "status": "PASS",
+      "start_ts": "2026-03-12T11:20:53.885875+00:00",
+      "end_ts": "2026-03-12T11:21:27.676790+00:00",
+      "runtime_s": 33.79,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "psmsl_latest.csv": "566dca6a5259dc561a73236d646f5d5b",
+        "ingestion_log.csv": "0bf28399a90e2af068bfa7a68afe128e"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_112103",
+        "cmems": {
+          "success": true,
+          "estimated_records": 0,
+          "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/cmems_latest.nc"
+        },
+        "psmsl": {
+          "success": true,
+          "total_records": 4185,
+          "records_by_country": {
+            "Bangladesh": 2675,
+            "Vietnam": 1128,
+            "Maldives": 382
+          },
+          "date_ranges": {
+            "Bangladesh": {
+              "start": "1932-02-01",
+              "end": "2024-12-01"
+            },
+            "Maldives": {
+              "start": "1987-03-01",
+              "end": "2018-12-01"
+            },
+            "Vietnam": {
+              "start": "1957-02-01",
+              "end": "2013-12-01"
+            }
+          },
+          "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/psmsl_latest.csv"
+        },
+        "validation": {
+          "all_passed": true,
+          "by_country": {
+            "Bangladesh": {
+              "source": "PSMSL_Bangladesh",
+              "total_rows": 2675,
+              "passed": true,
+              "missing_frac": 0.092,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            },
+            "Maldives": {
+              "source": "PSMSL_Maldives",
+              "total_rows": 382,
+              "passed": true,
+              "missing_frac": 0.0576,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            },
+            "Vietnam": {
+              "source": "PSMSL_Vietnam",
+              "total_rows": 1128,
+              "passed": true,
+              "missing_frac": 0.0062,
+              "outlier_count": 0,
+              "monotonic": true,
+              "range_ok": true,
+              "warnings": []
+            }
+          }
+        },
+        "log_file": "/content/drive/MyDrive/BD_ML_VT/logs/ingestion_log.csv"
+      }
+    },
+    {
+      "cell": 34,
+      "name": "Automated Feature Engineering",
+      "status": "PASS",
+      "start_ts": "2026-03-12T11:21:27.696586+00:00",
+      "end_ts": "2026-03-12T11:21:31.287640+00:00",
+      "runtime_s": 3.59,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "features_latest.csv": "571ad39e65ec8fff59c2ddad8b5bcc18",
+        "merged_dataset.csv": "c82e82fd6270c9abfeb5bd6eb7237f2f",
+        "feature_engineering_log.csv": "7f25b034b2f9e3d2302c10d23dc8931e"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_112127",
+        "historical_rows": 2628,
+        "live_feature_rows": 1434,
+        "merged_rows": 2644,
+        "countries_processed": [
+          "Bangladesh",
+          "Maldives",
+          "Vietnam"
+        ],
+        "feature_columns": [
+          "slrv2",
+          "tide_gauge",
+          "enso",
+          "aviso",
+          "cmip6_thermo",
+          "cmip6_glacier",
+          "momentum",
+          "residual",
+          "enso_x_aviso"
+        ],
+        "drift": {
+          "detected": true,
+          "max_psi": 18.99669,
+          "drifted_features": [
+            "slrv2",
+            "tide_gauge",
+            "enso",
+            "aviso",
+            "cmip6_thermo",
+            "cmip6_glacier",
+            "momentum",
+            "residual",
+            "enso_x_aviso"
+          ],
+          "psi_scores": {
+            "slrv2": 2.570086,
+            "tide_gauge": 18.963653,
+            "enso": 16.657252,
+            "aviso": 1.834021,
+            "cmip6_thermo": 18.972996,
+            "cmip6_glacier": 18.99669,
+            "momentum": 15.032314,
+            "residual": 18.969223,
+            "enso_x_aviso": 5.991749
+          }
+        },
+        "scaler_status": "UPDATED",
+        "outputs": {
+          "features_latest": "/content/drive/MyDrive/BD_ML_VT/live_data/features_latest.csv",
+          "merged_dataset": "/content/drive/MyDrive/BD_ML_VT/live_data/merged_dataset.csv",
+          "feature_log": "/content/drive/MyDrive/BD_ML_VT/logs/feature_engineering_log.csv",
+          "scaler_updated": "/content/drive/MyDrive/BD_ML_VT/processed/scaler_params_updated.json"
+        }
+      }
+    },
+    {
+      "cell": 35,
+      "name": "PINN Continual Learning",
+      "status": "PASS",
+      "start_ts": "2026-03-12T11:21:31.301108+00:00",
+      "end_ts": "2026-03-12T11:21:45.618282+00:00",
+      "runtime_s": 14.32,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "continual_learning_log.csv": "91c7dcec9f585d514566c6900252912f"
+      },
+      "error": null,
+      "return_value": {
+        "run_timestamp": "20260312_112131",
+        "device": "cpu",
+        "countries": {
+          "Bangladesh": {
+            "country": "Bangladesh",
+            "triggered": true,
+            "new_months": 16,
+            "updated_rmse": 80.23,
+            "original_rmse": 85.932,
+            "quality_passed": true,
+            "decision": "UPDATED",
+            "model_path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_112131.pt",
+            "best_val_loss": 0.5664271710821512,
+            "best_epoch": 1,
+            "error": null
+          },
+          "Vietnam": {
+            "country": "Vietnam",
+            "triggered": false,
+            "new_months": 0,
+            "updated_rmse": null,
+            "original_rmse": null,
+            "quality_passed": null,
+            "decision": null,
+            "model_path": null,
+            "best_val_loss": null,
+            "best_epoch": null,
+            "error": null
+          },
+          "Maldives": {
+            "country": "Maldives",
+            "triggered": false,
+            "new_months": 0,
+            "updated_rmse": null,
+            "original_rmse": null,
+            "quality_passed": null,
+            "decision": null,
+            "model_path": null,
+            "best_val_loss": null,
+            "best_epoch": null,
+            "error": null
+          }
+        },
+        "versioned_dir": "/content/drive/MyDrive/BD_ML_VT/models/versioned",
+        "cl_log": "/content/drive/MyDrive/BD_ML_VT/logs/continual_learning_log.csv",
+        "models_updated": [
+          "Bangladesh"
+        ],
+        "models_skipped": [
+          "Vietnam",
+          "Maldives"
+        ],
+        "models_rolledback": []
+      }
+    },
+    {
+      "cell": 36,
+      "name": "Risk Threshold Detection",
+      "status": "FAIL",
+      "start_ts": "2026-03-12T11:21:45.620964+00:00",
+      "end_ts": "2026-03-12T11:21:46.239187+00:00",
+      "runtime_s": 0.62,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {
+        "risk_assessment_latest.json": "6152c70fd8ab192d8b0dc8231c31a43e",
+        "risk_detection_log.csv": "571673506501b7c05a3ac5c8cee2cc88"
+      },
+      "error": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_201/3709950008.py\", line 269, in execute_step\n    module      = _load_module_from_path(cell_num, module_path)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_201/3709950008.py\", line 224, in _load_module_from_path\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/content/drive/MyDrive/BD_ML_VT/cells/cell36.py\", line 1281, in <module>\n    _src = In[-1]  # In[] is Colab/IPython's input history; -1 = this cell\n           ^^\nNameError: name 'In' is not defined\n",
+      "return_value": null
+    }
+  ]
+}

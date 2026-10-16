@@ -1,0 +1,50 @@
+{
+  "run_timestamp": "20260311_114006",
+  "alerts": [
+    {
+      "alert_id": "20260311_114006_DATA_GAP_Bangladesh",
+      "timestamp": "20260311_114006",
+      "alert_class": "DATA_GAP",
+      "severity": "INFO",
+      "country": "Bangladesh",
+      "title": "Bangladesh: Data gap of 465 days (threshold: 90 days)",
+      "detail": "The most recent observation for Bangladesh is 2024-12-01 \u2014 465 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+      "metrics": {
+        "last_observation_date": "2024-12-01",
+        "gap_days": 465,
+        "threshold_days": 90
+      },
+      "dispatched": []
+    },
+    {
+      "alert_id": "20260311_114006_DATA_GAP_Vietnam",
+      "timestamp": "20260311_114006",
+      "alert_class": "DATA_GAP",
+      "severity": "INFO",
+      "country": "Vietnam",
+      "title": "Vietnam: Data gap of 1196 days (threshold: 90 days)",
+      "detail": "The most recent observation for Vietnam is 2022-12-01 \u2014 1196 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+      "metrics": {
+        "last_observation_date": "2022-12-01",
+        "gap_days": 1196,
+        "threshold_days": 90
+      },
+      "dispatched": []
+    },
+    {
+      "alert_id": "20260311_114006_DATA_GAP_Maldives",
+      "timestamp": "20260311_114006",
+      "alert_class": "DATA_GAP",
+      "severity": "INFO",
+      "country": "Maldives",
+      "title": "Maldives: Data gap of 1196 days (threshold: 90 days)",
+      "detail": "The most recent observation for Maldives is 2022-12-01 \u2014 1196 days ago. Automated PSMSL ingestion (Cell 33) may have failed or the station network may be offline. Verify data pipeline and contact station operators.",
+      "metrics": {
+        "last_observation_date": "2022-12-01",
+        "gap_days": 1196,
+        "threshold_days": 90
+      },
+      "dispatched": []
+    }
+  ]
+}

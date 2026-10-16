@@ -1,0 +1,10 @@
+Country,Year,SLR_mm,Area_at_risk_km2,Pct_coastal_zone,Source
+Bangladesh,2030,30.0,1002.1,0.3,Synthetic DEM
+Bangladesh,2040,52.0,2662.2,0.81,Synthetic DEM
+Bangladesh,2050,80.0,5742.5,1.75,Synthetic DEM
+Vietnam,2030,10.0,250.4,0.04,Synthetic DEM
+Vietnam,2040,34.0,1600.1,0.23,Synthetic DEM
+Vietnam,2050,63.0,4506.4,0.66,Synthetic DEM
+Maldives,2030,38.0,54.0,18.0,Literature
+Maldives,2040,96.0,135.0,45.0,Literature
+Maldives,2050,167.0,240.0,80.0,Literature

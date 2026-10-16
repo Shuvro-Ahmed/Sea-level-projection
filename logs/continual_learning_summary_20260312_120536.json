@@ -1,0 +1,55 @@
+{
+  "run_timestamp": "20260312_120536",
+  "device": "cpu",
+  "countries": {
+    "Bangladesh": {
+      "country": "Bangladesh",
+      "triggered": true,
+      "new_months": 16,
+      "updated_rmse": 80.212,
+      "original_rmse": 85.932,
+      "quality_passed": true,
+      "decision": "UPDATED",
+      "model_path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_120536.pt",
+      "best_val_loss": 0.5663593503096226,
+      "best_epoch": 1,
+      "error": null
+    },
+    "Vietnam": {
+      "country": "Vietnam",
+      "triggered": false,
+      "new_months": 0,
+      "updated_rmse": null,
+      "original_rmse": null,
+      "quality_passed": null,
+      "decision": null,
+      "model_path": null,
+      "best_val_loss": null,
+      "best_epoch": null,
+      "error": null
+    },
+    "Maldives": {
+      "country": "Maldives",
+      "triggered": false,
+      "new_months": 0,
+      "updated_rmse": null,
+      "original_rmse": null,
+      "quality_passed": null,
+      "decision": null,
+      "model_path": null,
+      "best_val_loss": null,
+      "best_epoch": null,
+      "error": null
+    }
+  },
+  "versioned_dir": "/content/drive/MyDrive/BD_ML_VT/models/versioned",
+  "cl_log": "/content/drive/MyDrive/BD_ML_VT/logs/continual_learning_log.csv",
+  "models_updated": [
+    "Bangladesh"
+  ],
+  "models_skipped": [
+    "Vietnam",
+    "Maldives"
+  ],
+  "models_rolledback": []
+}

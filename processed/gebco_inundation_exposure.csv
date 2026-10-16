@@ -1,0 +1,10 @@
+Country,Year,SLR_mm,Area_at_risk_km2,Pct_coastal_zone,Method,Source
+Bangladesh,2030,78.0,436.8,0.563,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Bangladesh,2040,129.0,722.4,0.931,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Bangladesh,2050,185.0,1036.0,1.335,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Vietnam,2030,10.0,64.0,0.066,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Vietnam,2040,34.0,217.6,0.223,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Vietnam,2050,63.0,403.2,0.414,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Maldives,2030,38.0,9.0,0.899,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Maldives,2040,96.0,22.8,2.271,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN
+Maldives,2050,167.0,39.7,3.95,LECZ interpolated,GEBCO 2023 + LECZ/CIESIN

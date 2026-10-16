@@ -1,0 +1,56 @@
+run_timestamp,pipeline_status,cell,name,status,runtime_s,error_excerpt
+20260311_120204,FAILED,901,Fail First,FAIL,0.0,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/717009276.py"", line 274, in execute_step
+    return_value "
+20260311_120616,FAILED,901,Fail First,FAIL,0.01,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 274, in execute_step
+    return_value"
+20260311_120832,FAILED,33,Autonomous Data Ingestion,FAIL,0.0,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 269, in execute_step
+    module      "
+20260311_122330,FAILED,33,Autonomous Data Ingestion,FAIL,0.02,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 269, in execute_step
+    module      "
+20260311_133957,FAILED,33,Autonomous Data Ingestion,FAIL,0.04,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 269, in execute_step
+    module      "
+20260311_134008,FAILED,901,Fail First,FAIL,0.0,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 274, in execute_step
+    return_value"
+20260311_134016,FAILED,33,Autonomous Data Ingestion,FAIL,0.01,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 269, in execute_step
+    module      "
+20260311_134231,FAILED,901,Fail First,FAIL,0.0,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 274, in execute_step
+    return_value"
+20260311_141240,FAILED,33,Autonomous Data Ingestion,FAIL,0.03,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_136/3301074570.py"", line 269, in execute_step
+    module      "
+20260312_112004,FAILED,901,Fail First,FAIL,0.0,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_201/3709950008.py"", line 274, in execute_step
+    return_value"
+20260312_112053,FAILED,33,Autonomous Data Ingestion,PASS,33.79,
+20260312_112053,FAILED,34,Automated Feature Engineering,PASS,3.59,
+20260312_112053,FAILED,35,PINN Continual Learning,PASS,14.32,
+20260312_112053,FAILED,36,Risk Threshold Detection,FAIL,0.62,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_201/3709950008.py"", line 269, in execute_step
+    module      "
+20260312_113503,FAILED,33,Autonomous Data Ingestion,PASS,46.34,
+20260312_113503,FAILED,34,Automated Feature Engineering,PASS,2.64,
+20260312_113503,FAILED,35,PINN Continual Learning,PASS,6.21,
+20260312_113503,FAILED,36,Risk Threshold Detection,FAIL,0.41,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_201/3709950008.py"", line 269, in execute_step
+    module      "
+20260312_115325,FAILED,33,Autonomous Data Ingestion,PASS,32.2,
+20260312_115325,FAILED,34,Automated Feature Engineering,PASS,2.52,
+20260312_115325,FAILED,35,PINN Continual Learning,PASS,5.52,
+20260312_115325,FAILED,36,Risk Threshold Detection,FAIL,0.02,"Traceback (most recent call last):
+  File ""/tmp/ipykernel_201/3709950008.py"", line 269, in execute_step
+    module      "
+20260312_120455,SUCCESS,33,Autonomous Data Ingestion,PASS,36.27,
+20260312_120455,SUCCESS,34,Automated Feature Engineering,PASS,3.86,
+20260312_120455,SUCCESS,35,PINN Continual Learning,PASS,6.42,
+20260312_120455,SUCCESS,36,Risk Threshold Detection,PASS,0.43,
+20260312_120455,SUCCESS,37,LLM Recommendation Engine,PASS,152.85,
+20260312_120455,SUCCESS,38,Dashboard and Publication Report,PASS,6.1,
+20260312_120455,SUCCESS,39,Automated Alert System,PASS,3.17,

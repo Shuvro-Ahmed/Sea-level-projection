@@ -1,0 +1,418 @@
+{
+  "report_metadata": {
+    "generated_by": "offline-template",
+    "generation_ts": "2026-03-10T16:32:04.967878+00:00",
+    "baseline_date": "2022-12-31",
+    "system_risk_level": "GREEN",
+    "audience": "National coastal adaptation planners"
+  },
+  "five_year_adaptation_measures": {
+    "Bangladesh": [
+      {
+        "measure": "Coastal Early Warning System Upgrade",
+        "rationale": "Bangladesh has recorded 108.7 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.0919 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+        "actions": [
+          "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+          "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+          "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+        ],
+        "timeline": "2025-2026",
+        "priority": "HIGH",
+        "cost_tier": "MEDIUM"
+      },
+      {
+        "measure": "Mangrove and Coastal Ecosystem Restoration",
+        "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 108.7 mm rise already observed.",
+        "actions": [
+          "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+          "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+          "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+        ],
+        "timeline": "2025-2027",
+        "priority": "HIGH",
+        "cost_tier": "LOW"
+      },
+      {
+        "measure": "Climate-Resilient Infrastructure Standards",
+        "rationale": "With 7.4 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+        "actions": [
+          "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+          "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+          "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+        ],
+        "timeline": "2025-2028",
+        "priority": "HIGH",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Managed Coastal Retreat Planning",
+        "rationale": "CVI of 0.847 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+        "actions": [
+          "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+          "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+          "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+        ],
+        "timeline": "2026-2030",
+        "priority": "MEDIUM",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Subsidence Monitoring and Groundwater Governance",
+        "rationale": "VLM rate of -2.0 mm/yr significantly amplifies effective SLR beyond global mean, requiring dedicated monitoring and governance response.",
+        "actions": [
+          "Install continuous GNSS benchmarks at 10 coastal locations to monitor vertical land motion quarterly.",
+          "Regulate groundwater extraction in coastal aquifer zones demonstrating >5 mm/yr subsidence rates.",
+          "Publish annual VLM monitoring report informing local government land use decisions."
+        ],
+        "timeline": "2025-2027",
+        "priority": "MEDIUM",
+        "cost_tier": "MEDIUM"
+      }
+    ],
+    "Vietnam": [
+      {
+        "measure": "Coastal Early Warning System Upgrade",
+        "rationale": "Vietnam has recorded 0.0 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.1000 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+        "actions": [
+          "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+          "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+          "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+        ],
+        "timeline": "2025-2026",
+        "priority": "HIGH",
+        "cost_tier": "MEDIUM"
+      },
+      {
+        "measure": "Mangrove and Coastal Ecosystem Restoration",
+        "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 0.0 mm rise already observed.",
+        "actions": [
+          "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+          "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+          "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+        ],
+        "timeline": "2025-2027",
+        "priority": "HIGH",
+        "cost_tier": "LOW"
+      },
+      {
+        "measure": "Climate-Resilient Infrastructure Standards",
+        "rationale": "With 5.4 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+        "actions": [
+          "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+          "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+          "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+        ],
+        "timeline": "2025-2028",
+        "priority": "MEDIUM",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Managed Coastal Retreat Planning",
+        "rationale": "CVI of 0.793 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+        "actions": [
+          "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+          "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+          "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+        ],
+        "timeline": "2026-2030",
+        "priority": "MEDIUM",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Subsidence Monitoring and Groundwater Governance",
+        "rationale": "VLM rate of -8.9 mm/yr significantly amplifies effective SLR beyond global mean, requiring dedicated monitoring and governance response.",
+        "actions": [
+          "Install continuous GNSS benchmarks at 10 coastal locations to monitor vertical land motion quarterly.",
+          "Regulate groundwater extraction in coastal aquifer zones demonstrating >5 mm/yr subsidence rates.",
+          "Publish annual VLM monitoring report informing local government land use decisions."
+        ],
+        "timeline": "2025-2027",
+        "priority": "HIGH",
+        "cost_tier": "MEDIUM"
+      }
+    ],
+    "Maldives": [
+      {
+        "measure": "Coastal Early Warning System Upgrade",
+        "rationale": "Maldives has recorded 0.0 mm cumulative SLR above the 2022 baseline with a compound flood probability of 0.2000 annually, requiring sub-seasonal warning lead times for low-lying coastal communities.",
+        "actions": [
+          "Deploy tide gauge telemetry at 15-minute resolution at all major estuarine entry points.",
+          "Integrate CMEMS satellite altimetry into national flood forecasting models within 18 months.",
+          "Establish SMS/community radio last-mile alert protocols reaching 90% of coastal ward populations."
+        ],
+        "timeline": "2025-2026",
+        "priority": "HIGH",
+        "cost_tier": "MEDIUM"
+      },
+      {
+        "measure": "Mangrove and Coastal Ecosystem Restoration",
+        "rationale": "Nature-based solutions can reduce wave energy by 50-70% and provide sediment accretion offsetting SLR at rates competitive with the 0.0 mm rise already observed.",
+        "actions": [
+          "Map and gazette 20% additional coastal buffer zones as protected mangrove corridors.",
+          "Implement community-based mangrove nursery programmes targeting 5,000 ha restoration by 2027.",
+          "Monitor ecosystem accretion rates against SLR annually using LiDAR elevation surveys."
+        ],
+        "timeline": "2025-2027",
+        "priority": "HIGH",
+        "cost_tier": "LOW"
+      },
+      {
+        "measure": "Climate-Resilient Infrastructure Standards",
+        "rationale": "With 4.9 years to the next risk threshold (AMBER), new coastal infrastructure must be designed for a 50-year SLR horizon under SSP2-4.5.",
+        "actions": [
+          "Revise national building codes to mandate freeboard allowances for SLR in all coastal construction permits.",
+          "Conduct elevation surveys of critical infrastructure (roads, hospitals, power substations) within 2 years.",
+          "Retire or elevate 100-year floodplain assets below the RED risk threshold elevation."
+        ],
+        "timeline": "2025-2028",
+        "priority": "HIGH",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Managed Coastal Retreat Planning",
+        "rationale": "CVI of 0.921 indicates high structural vulnerability. Proactive managed retreat planning reduces emergency displacement costs by up to 4:1 versus reactive post-disaster relocation.",
+        "actions": [
+          "Commission national coastal exposure assessment identifying settlements below RED threshold elevation.",
+          "Develop voluntary relocation incentive schemes with land tenure guarantees for receiving areas.",
+          "Pilot managed retreat in 3 high-exposure sub-districts by 2027 with full monitoring and evaluation."
+        ],
+        "timeline": "2026-2030",
+        "priority": "MEDIUM",
+        "cost_tier": "HIGH"
+      },
+      {
+        "measure": "Sea-Level Monitoring Station Densification",
+        "rationale": "Continuous in-situ monitoring underpins all risk threshold detection and early warning systems.",
+        "actions": [
+          "Commission 3 additional PSMSL-affiliated tide gauges in under-monitored coastal sectors.",
+          "Establish data-sharing agreement with regional oceanographic agencies for real-time altimetry.",
+          "Publish open-access coastal monitoring dashboard updated monthly."
+        ],
+        "timeline": "2025-2027",
+        "priority": "MEDIUM",
+        "cost_tier": "MEDIUM"
+      }
+    ],
+    "regional": [
+      {
+        "measure": "Bay of Bengal / Indian Ocean Regional SLR Monitoring Consortium",
+        "rationale": "Bangladesh, Vietnam, and the Maldives share oceanographic drivers (ENSO, IOD, thermosteric expansion) that are most efficiently monitored and modelled at regional scale.",
+        "actions": [
+          "Formalise a tripartite data-sharing agreement linking national tide gauge networks under IOGOOS.",
+          "Establish a shared CMEMS sub-regional altimetry processing pipeline updated monthly.",
+          "Joint capacity-building programme for national hydrological services in PINN-based SLR forecasting."
+        ],
+        "timeline": "2026-2028",
+        "priority": "MEDIUM",
+        "cost_tier": "LOW"
+      },
+      {
+        "measure": "Regional Climate Displacement Protocol",
+        "rationale": "Maldivian and low-lying Bangladesh coastal populations face displacement scenarios that require pre-agreed regional frameworks before crisis conditions force ad-hoc responses.",
+        "actions": [
+          "Commission a regional climate displacement needs assessment under SAARC / IORA auspices.",
+          "Negotiate bilateral labour mobility agreements enabling climate-linked migration pathways.",
+          "Establish a regional climate displacement fund with initial capitalisation from Green Climate Fund."
+        ],
+        "timeline": "2027-2030",
+        "priority": "MEDIUM",
+        "cost_tier": "MEDIUM"
+      }
+    ]
+  },
+  "policy_recommendations": {
+    "Bangladesh": [
+      {
+        "policy": "National Coastal Adaptation Plan (NAP) Update",
+        "rationale": "Existing NAPs predate the 108.7 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+        "instruments": [
+          "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+          "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+        ],
+        "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+        "rationale": "With 7.4 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+        "instruments": [
+          "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+          "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+        ],
+        "lead_agency": "Ministry of Land / Urban Planning Authority",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Climate Finance Mobilisation for Coastal Resilience",
+        "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+        "instruments": [
+          "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+          "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+          "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+        ],
+        "lead_agency": "Ministry of Finance / Climate Change Unit",
+        "horizon": "medium (3-5yr)",
+        "urgency": "NEAR-TERM"
+      },
+      {
+        "policy": "Coastal Fisheries and Livelihood Transition Programme",
+        "rationale": "Coastal livelihood diversification reduces population exposure dependency and improves voluntary relocation uptake.",
+        "instruments": [
+          "Aquaculture and mariculture development grants for coastal fishing communities.",
+          "Social protection floor linked to coastal relocation to reduce resistance to managed retreat."
+        ],
+        "lead_agency": "Ministry of Fisheries / Social Affairs",
+        "horizon": "medium (3-5yr)",
+        "urgency": "STRATEGIC"
+      }
+    ],
+    "Vietnam": [
+      {
+        "policy": "National Coastal Adaptation Plan (NAP) Update",
+        "rationale": "Existing NAPs predate the 0.0 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+        "instruments": [
+          "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+          "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+        ],
+        "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+        "rationale": "With 5.4 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+        "instruments": [
+          "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+          "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+        ],
+        "lead_agency": "Ministry of Land / Urban Planning Authority",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Climate Finance Mobilisation for Coastal Resilience",
+        "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+        "instruments": [
+          "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+          "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+          "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+        ],
+        "lead_agency": "Ministry of Finance / Climate Change Unit",
+        "horizon": "medium (3-5yr)",
+        "urgency": "NEAR-TERM"
+      },
+      {
+        "policy": "Groundwater Extraction Regulation in Coastal Aquifer Zones",
+        "rationale": "VLM of -8.9 mm/yr is substantially driven by groundwater abstraction in deltaic aquifers; regulatory intervention can reduce effective SLR by 2-4 mm/yr.",
+        "instruments": [
+          "Groundwater extraction licensing with volumetric caps in designated coastal subsidence risk zones.",
+          "Annual aquifer level monitoring with automatic permit suspension if drawdown exceeds thresholds."
+        ],
+        "lead_agency": "Ministry of Water Resources / Geological Survey",
+        "horizon": "medium (3-5yr)",
+        "urgency": "NEAR-TERM"
+      }
+    ],
+    "Maldives": [
+      {
+        "policy": "National Coastal Adaptation Plan (NAP) Update",
+        "rationale": "Existing NAPs predate the 0.0 mm observed rise and the compound probability data generated by this monitoring system; urgent revision is required.",
+        "instruments": [
+          "Mandatory 5-year NAP review cycle anchored to live SLR monitoring data from this HyperSLR system.",
+          "Cross-ministerial coastal adaptation committee with defined decision triggers at AMBER, RED, CRITICAL thresholds."
+        ],
+        "lead_agency": "Ministry of Environment / National Disaster Risk Reduction Agency",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Coastal Zone Land Use Moratorium Below AMBER Threshold Elevation",
+        "rationale": "With 4.9 years to the next threshold, permitting new permanent structures in the exposure zone locks in asset losses that exceed prevention costs by 3-8x.",
+        "instruments": [
+          "Issue ministerial directive restricting coastal construction permits below defined risk elevation contours.",
+          "Establish risk-zone overlay in national GIS cadastre linked to HyperSLR threshold boundaries."
+        ],
+        "lead_agency": "Ministry of Land / Urban Planning Authority",
+        "horizon": "short (1-2yr)",
+        "urgency": "IMMEDIATE"
+      },
+      {
+        "policy": "Climate Finance Mobilisation for Coastal Resilience",
+        "rationale": "Green Climate Fund, Adaptation Fund, and World Bank PROBLUE resources are available but require pre-qualified project pipelines and monitoring frameworks to unlock.",
+        "instruments": [
+          "Develop a National Adaptation Finance Strategy identifying eligible instruments for each adaptation measure.",
+          "Register this HyperSLR monitoring system as an MRV (Monitoring, Reporting, Verification) tool for GCF proposals.",
+          "Engage NDC partnership for technical assistance in packaging bankable coastal resilience projects."
+        ],
+        "lead_agency": "Ministry of Finance / Climate Change Unit",
+        "horizon": "medium (3-5yr)",
+        "urgency": "NEAR-TERM"
+      },
+      {
+        "policy": "Coastal Fisheries and Livelihood Transition Programme",
+        "rationale": "Coastal livelihood diversification reduces population exposure dependency and improves voluntary relocation uptake.",
+        "instruments": [
+          "Aquaculture and mariculture development grants for coastal fishing communities.",
+          "Social protection floor linked to coastal relocation to reduce resistance to managed retreat."
+        ],
+        "lead_agency": "Ministry of Fisheries / Social Affairs",
+        "horizon": "medium (3-5yr)",
+        "urgency": "STRATEGIC"
+      }
+    ],
+    "regional": [
+      {
+        "policy": "UNFCCC National Adaptation Plan (NAP) Alignment and Joint Reporting",
+        "rationale": "Coordinated NAP submissions under the UNFCCC NAP process strengthen collective bargaining for adaptation finance and technical support.",
+        "instruments": [
+          "Joint submission to UNFCCC NAP Technical Working Group presenting this HyperSLR system as shared MRV infrastructure.",
+          "Coordinated Loss and Damage claims documentation using common HyperSLR baseline and risk metrics."
+        ],
+        "lead_agency": "UNFCCC National Focal Points / SAARC Environment Ministers",
+        "horizon": "medium (3-5yr)",
+        "urgency": "NEAR-TERM"
+      },
+      {
+        "policy": "Regional Catastrophe Risk Insurance Pool",
+        "rationale": "Individual national insurance markets lack the risk diversification to offer affordable coastal flood cover; a regional pool following the CCRIF model is viable.",
+        "instruments": [
+          "Feasibility study for a Bay of Bengal / Indian Ocean Catastrophe Risk Pool modelled on CCRIF SPC.",
+          "Parametric insurance product design using HyperSLR risk thresholds as trigger conditions."
+        ],
+        "lead_agency": "Regional Development Banks / Finance Ministries",
+        "horizon": "long (5-10yr)",
+        "urgency": "STRATEGIC"
+      }
+    ]
+  },
+  "critical_uncertainties": [
+    "SSP2-4.5 rate assumptions may underestimate acceleration if West Antarctic Ice Sheet instability progresses faster than IPCC AR6 median projections.",
+    "VLM rates for Bangladesh and Vietnam are based on sparse GNSS networks; true subsidence may exceed modelled rates in intensively pumped agricultural zones.",
+    "Compound event probability estimates assume stationarity of storm surge climatology; climate-driven intensification of tropical cyclones could increase return period frequencies.",
+    "Political will and institutional capacity for managed retreat remain the primary implementation bottleneck, not technical or financial constraints."
+  ],
+  "monitoring_triggers": [
+    {
+      "trigger": "Bangladesh cumulative rise reaches AMBER threshold",
+      "threshold": "150 mm above 2022-12-31 baseline",
+      "response_action": "Convene emergency NAP review; activate Tier 2 coastal protection budget; issue construction moratorium in RED exposure zone."
+    },
+    {
+      "trigger": "Vietnam or Maldives cumulative rise reaches 25 mm above baseline",
+      "threshold": "25 mm (50% of AMBER threshold)",
+      "response_action": "Initiate managed retreat site identification; accelerate early warning system deployment; trigger GCF project preparation funding."
+    },
+    {
+      "trigger": "Acceleration z-score exceeds 2.0 for any country",
+      "threshold": "z > 2.0 on 24-month rolling trend",
+      "response_action": "Revise SSP2-4.5 time-to-threshold projections upward; brief cabinet; engage IPCC WGI national focal point for expert assessment."
+    },
+    {
+      "trigger": "Annual compound event probability exceeds 5%",
+      "threshold": "compound_prob_annual > 0.05",
+      "response_action": "Declare coastal climate emergency; activate national disaster risk reduction budget supplementary allocation."
+    }
+  ]
+}

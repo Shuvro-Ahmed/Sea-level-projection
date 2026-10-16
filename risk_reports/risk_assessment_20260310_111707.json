@@ -1,0 +1,71 @@
+{
+  "report_timestamp": "20260310_111707",
+  "baseline_date": "2022-12-31",
+  "system_risk_level": "AMBER",
+  "any_acceleration": false,
+  "countries": {
+    "Bangladesh": {
+      "country": "Bangladesh",
+      "assessment_date": "20260310_111707",
+      "error": null,
+      "last_observation_date": "2024-12-01",
+      "current_rise_mm": 207.256,
+      "n_observations": 16,
+      "risk_level": "AMBER",
+      "thresholds_mm": {
+        "amber": 150,
+        "red": 250,
+        "critical": 350
+      },
+      "acceleration": {
+        "acceleration_detected": false,
+        "z_score": 0.0,
+        "recent_slope_mm_yr": null,
+        "historical_mean_slope": null,
+        "historical_std_slope": null,
+        "window_months": 24,
+        "note": "Insufficient data for acceleration detection."
+      },
+      "compound_risk": {
+        "compound_prob_annual": 0.099877,
+        "slr_exceedance_prob": 0.927507,
+        "surge_exceedance_prob": 0.1,
+        "projected_slr_mm": 352.86,
+        "projection_year": 2050,
+        "theta_copula": 2.0,
+        "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+      },
+      "time_to_threshold": {
+        "years_to_amber": 0.0,
+        "years_to_red": 7.6,
+        "years_to_critical": 25.5,
+        "next_threshold": "red",
+        "years_to_next": 7.6,
+        "rate_used_mm_yr": 5.6
+      },
+      "meta": {
+        "population_at_risk": 35000000,
+        "gdp_at_risk_bn_usd": 12.4,
+        "agri_exposure_km2": 14000,
+        "vlm_mm_yr": -2.0,
+        "cvi_score": 0.847
+      }
+    },
+    "Vietnam": {
+      "country": "Vietnam",
+      "assessment_date": "20260310_111707",
+      "error": "index -1 is out of bounds for axis 0 with size 0"
+    },
+    "Maldives": {
+      "country": "Maldives",
+      "assessment_date": "20260310_111707",
+      "error": "index -1 is out of bounds for axis 0 with size 0"
+    }
+  },
+  "risk_levels_summary": {
+    "Bangladesh": "AMBER",
+    "Vietnam": "UNKNOWN",
+    "Maldives": "UNKNOWN"
+  },
+  "pipeline_version": "HyperSLR-Cell36"
+}

@@ -1,0 +1,414 @@
+{
+  "experiment_id": "hypersrl_20260312_112009",
+  "run_timestamp": "20260312_112009",
+  "framework": "HyperSLR Digital Twin",
+  "cell": 41,
+  "layers": {
+    "environment": {
+      "python_version": "3.12.12",
+      "python_impl": "CPython",
+      "os": "Linux",
+      "os_release": "6.6.113+",
+      "cpu_count": 2,
+      "runtime": "Google Colab",
+      "gpu": "CPU only",
+      "package_versions": {
+        "torch": "2.10.0+cpu",
+        "numpy": "2.0.2",
+        "pandas": "2.2.2",
+        "scipy": "1.16.3",
+        "sklearn": "1.6.1",
+        "plotly": "5.24.1",
+        "reportlab": "4.4.10",
+        "apscheduler": "3.11.2",
+        "google.generativeai": "0.8.6",
+        "groq": "not installed",
+        "cuda": "not available",
+        "cudnn": "not available"
+      }
+    },
+    "dataset": {
+      "merged_dataset": {
+        "path": "/content/drive/MyDrive/BD_ML_VT/live_data/merged_dataset.csv",
+        "md5": "c82e82fd6270c9abfeb5bd6eb7237f2f",
+        "rows": 2644,
+        "columns": [
+          "date",
+          "country",
+          "split",
+          "slrv2",
+          "slrv2_msl_mm_norm",
+          "copernicus_hist_mm",
+          "copernicus_hist_mm_norm",
+          "copernicus_futr_mm",
+          "copernicus_futr_mm_norm",
+          "tide_gauge",
+          "tide_gauge_mm_norm",
+          "enso",
+          "enso_anom_norm",
+          "aviso",
+          "aviso_err_mm",
+          "aviso_sla_mm_norm",
+          "vlm",
+          "vlm_mm_yr_norm",
+          "vlm_cumulative_mm",
+          "relative_slr_mm",
+          "relative_slr_mm_norm",
+          "cmip6_thermo",
+          "cmip6_glacier",
+          "cmip6_total_mm",
+          "cmip6_unc_mm",
+          "cmip6_thermo_mm_norm",
+          "cmip6_glacier_mm_norm",
+          "cmip6_total_mm_norm",
+          "momentum",
+          "enso_x_aviso",
+          "residual",
+          "month_sin",
+          "month_cos",
+          "slr_momentum_mm_norm",
+          "physics_residual_mm_norm"
+        ],
+        "n_columns": 35,
+        "schema_hash": "59334e0c18429fadc206296f439d459a",
+        "date_range": {
+          "min": "1950-01-01 00:00:00",
+          "max": "2024-12-01 00:00:00"
+        },
+        "country_counts": {
+          "Bangladesh": 892,
+          "Maldives": 876,
+          "Vietnam": 876
+        },
+        "null_counts": {
+          "date": 0,
+          "country": 0,
+          "split": 16,
+          "slrv2": 0,
+          "slrv2_msl_mm_norm": 16,
+          "copernicus_hist_mm": 229,
+          "copernicus_hist_mm_norm": 16,
+          "copernicus_futr_mm": 16,
+          "copernicus_futr_mm_norm": 16,
+          "tide_gauge": 506,
+          "tide_gauge_mm_norm": 16,
+          "enso": 0,
+          "enso_anom_norm": 16,
+          "aviso": 0,
+          "aviso_err_mm": 16,
+          "aviso_sla_mm_norm": 16,
+          "vlm": 0,
+          "vlm_mm_yr_norm": 16,
+          "vlm_cumulative_mm": 16,
+          "relative_slr_mm": 16,
+          "relative_slr_mm_norm": 16,
+          "cmip6_thermo": 0,
+          "cmip6_glacier": 0,
+          "cmip6_total_mm": 16,
+          "cmip6_unc_mm": 16,
+          "cmip6_thermo_mm_norm": 16,
+          "cmip6_glacier_mm_norm": 16,
+          "cmip6_total_mm_norm": 16,
+          "momentum": 0,
+          "enso_x_aviso": 0,
+          "residual": 0,
+          "month_sin": 0,
+          "month_cos": 0,
+          "slr_momentum_mm_norm": 16,
+          "physics_residual_mm_norm": 16
+        }
+      },
+      "features_latest": {
+        "path": "/content/drive/MyDrive/BD_ML_VT/live_data/features_latest.csv",
+        "md5": "571ad39e65ec8fff59c2ddad8b5bcc18",
+        "rows": 1434,
+        "columns": [
+          "date",
+          "tide_gauge",
+          "slrv2",
+          "enso",
+          "aviso",
+          "vlm",
+          "cmip6_thermo",
+          "cmip6_glacier",
+          "momentum",
+          "residual",
+          "month_sin",
+          "month_cos",
+          "enso_x_aviso",
+          "country"
+        ],
+        "n_columns": 14,
+        "schema_hash": "9ae2c0c83c5f1755530a695c94ee0a99",
+        "date_range": {
+          "min": "1932-02-01 00:00:00",
+          "max": "2024-12-01 00:00:00"
+        },
+        "country_counts": {
+          "Bangladesh": 736,
+          "Vietnam": 456,
+          "Maldives": 242
+        },
+        "null_counts": {
+          "date": 0,
+          "tide_gauge": 0,
+          "slrv2": 0,
+          "enso": 0,
+          "aviso": 0,
+          "vlm": 0,
+          "cmip6_thermo": 0,
+          "cmip6_glacier": 0,
+          "momentum": 6,
+          "residual": 6,
+          "month_sin": 0,
+          "month_cos": 0,
+          "enso_x_aviso": 0,
+          "country": 0
+        }
+      }
+    },
+    "model": {
+      "n_checkpoints": 10,
+      "checkpoints": [
+        {
+          "checkpoint": "pinn_bangladesh_v20260310_110417.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260310_110417.pt",
+          "md5": "825824cb5297629bd27607c69e37b60f",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260310_113502.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260310_113502.pt",
+          "md5": "cc5203d578b5af05df14df32d2fb8573",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260310_121758.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260310_121758.pt",
+          "md5": "3002316147c6d7327093954ac9895361",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260310_163106.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260310_163106.pt",
+          "md5": "0a34ea0bb599dce237f57ff2f50ce1af",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260311_113848.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260311_113848.pt",
+          "md5": "a127044a0fbda582ba649f419598fd6b",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260312_111854.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_111854.pt",
+          "md5": "61b4f7e6091db48c18c3956e868a3364",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260312_112009.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_112009.pt",
+          "md5": "944aeaca4e32a17ce5c1d6f448ff628f",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260312_112017.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_112017.pt",
+          "md5": "474ac485199e1f389783664dc7e54e19",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260312_112027.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_112027.pt",
+          "md5": "a386399cd56713b14eb97551e16ed68e",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        },
+        {
+          "checkpoint": "pinn_bangladesh_v20260312_112034.pt",
+          "path": "/content/drive/MyDrive/BD_ML_VT/models/versioned/pinn_bangladesh_v20260312_112034.pt",
+          "md5": "1f00733faba8d9a6186b6528c9a0a660",
+          "size_kb": 847.8,
+          "param_count": 215234,
+          "arch_hash": "bb8441ca6e4f7d55e8a9c99353727ef9",
+          "arch_config": {},
+          "frozen_layers": [],
+          "cl_metrics": {}
+        }
+      ],
+      "torch_version": "2.10.0+cpu"
+    },
+    "hyperparams": {
+      "SEQ_LEN": 12,
+      "BATCH_SIZE": 16,
+      "VAL_SPLIT": 0.2,
+      "FINE_TUNE_LR": 0.0001,
+      "FINE_TUNE_EPOCHS": 30,
+      "EARLY_STOP_PATIENCE": 10,
+      "PHYSICS_LAMBDA": 0.4,
+      "MIN_NEW_MONTHS": null,
+      "FROZEN_LAYER_NAMES": [
+        "lstm"
+      ],
+      "CELL28_FEATURE_COLUMNS": [
+        "slrv2",
+        "tide_gauge",
+        "enso",
+        "aviso",
+        "vlm",
+        "cmip6_thermo",
+        "cmip6_glacier",
+        "momentum"
+      ],
+      "cell35_md5": "c169a7877fdd324af00fed93006d7753"
+    },
+    "metrics": {
+      "n_log_entries": 112,
+      "columns": [
+        "timestamp",
+        "country",
+        "stage",
+        "status",
+        "detail",
+        "error"
+      ],
+      "per_country": {
+        "Bangladesh": {
+          "status": "SUCCESS"
+        },
+        "Vietnam": {
+          "status": "SKIPPED"
+        },
+        "Maldives": {
+          "status": "SKIPPED"
+        }
+      }
+    },
+    "risk": {
+      "md5": "c32e730f3a58ee79207670e41ea4021c",
+      "system_risk_level": "GREEN",
+      "baseline_date": "2022-12-31",
+      "any_acceleration": false,
+      "countries": {
+        "Bangladesh": {
+          "risk_level": "GREEN",
+          "current_rise_mm": 108.677,
+          "n_observations": 34,
+          "last_observation_date": "2024-12-01",
+          "acceleration_detected": false,
+          "z_score": 1.6008,
+          "compound_prob_annual": 0.0919,
+          "years_to_amber": 7.4,
+          "years_to_red": 25.2
+        },
+        "Vietnam": {
+          "risk_level": "GREEN",
+          "current_rise_mm": 0.0,
+          "n_observations": 18,
+          "last_observation_date": "2022-12-01",
+          "acceleration_detected": false,
+          "z_score": 0.0,
+          "compound_prob_annual": 0.1,
+          "years_to_amber": 5.4,
+          "years_to_red": 10.8
+        },
+        "Maldives": {
+          "risk_level": "GREEN",
+          "current_rise_mm": 0.0,
+          "n_observations": 18,
+          "last_observation_date": "2022-12-01",
+          "acceleration_detected": false,
+          "z_score": 0.0,
+          "compound_prob_annual": 0.2,
+          "years_to_amber": 4.9,
+          "years_to_red": 7.8
+        }
+      }
+    },
+    "pipeline": {
+      "run_timestamp": "20260312_112004",
+      "pipeline_status": "FAILED",
+      "total_runtime_s": 2.42,
+      "steps_passed": 0,
+      "steps_failed": 1,
+      "step_digest": [
+        {
+          "cell": 901,
+          "name": "Fail First",
+          "status": "FAIL",
+          "runtime_s": 0.0,
+          "checksums": {}
+        }
+      ],
+      "report_md5": "7b2976d460106022817d3f6b52751670"
+    },
+    "provenance": {
+      "provenance_hash": "efe9b1182ae9def1c1e5227bf76f2b58",
+      "cell_hashes": {
+        "cell33": "c40b065af1b97f452bf0c7c591467626",
+        "cell34": "524c249952af04432c59f63e4c4c22f9",
+        "cell35": "c169a7877fdd324af00fed93006d7753",
+        "cell36": "bc9e3c21c37066993ef3db1fb6c5c9ae",
+        "cell37": "78441f7462dc47f27713c98420f2ca8d",
+        "cell38": "65b7778b300472c4ed1bf69ae8b7a9ea",
+        "cell39": "56d6d75c7c1e47a5a2d14f95c0fa0fff",
+        "cell40": "8aa2e8c818e6f67f51e6e1f38f8922b4",
+        "cell41": "not found"
+      },
+      "cells_dir": "/content/drive/MyDrive/BD_ML_VT/cells"
+    }
+  },
+  "summary": {
+    "system_risk_level": "GREEN",
+    "any_acceleration": false,
+    "bangladesh_rise_mm": 108.677,
+    "n_checkpoints": 10,
+    "pipeline_status": "FAILED",
+    "provenance_hash": "efe9b1182ae9def1c1e5227bf76f2b58"
+  }
+}

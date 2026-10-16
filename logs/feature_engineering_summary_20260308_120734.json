@@ -1,0 +1,38 @@
+{
+  "run_timestamp": "20260308_120734",
+  "historical_rows": 2628,
+  "live_feature_rows": 1434,
+  "merged_rows": 2644,
+  "countries_processed": [
+    "Bangladesh",
+    "Maldives",
+    "Vietnam"
+  ],
+  "feature_columns": [
+    "slrv2",
+    "tide_gauge",
+    "enso",
+    "aviso",
+    "vlm",
+    "cmip6_thermo",
+    "cmip6_glacier",
+    "momentum",
+    "residual",
+    "month_sin",
+    "month_cos",
+    "enso_x_aviso"
+  ],
+  "drift": {
+    "detected": false,
+    "max_psi": 0.0,
+    "drifted_features": [],
+    "psi_scores": {}
+  },
+  "scaler_status": "UNCHANGED",
+  "outputs": {
+    "features_latest": "/content/drive/MyDrive/BD_ML_VT/live_data/features_latest.csv",
+    "merged_dataset": "/content/drive/MyDrive/BD_ML_VT/live_data/merged_dataset.csv",
+    "feature_log": "/content/drive/MyDrive/BD_ML_VT/logs/feature_engineering_log.csv",
+    "scaler_updated": null
+  }
+}

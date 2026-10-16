@@ -1,0 +1,34 @@
+{
+  "run_timestamp": "20260308_115859",
+  "historical_rows": 2628,
+  "live_feature_rows": 1434,
+  "merged_rows": 2644,
+  "countries_processed": [
+    "Bangladesh",
+    "Maldives",
+    "Vietnam"
+  ],
+  "feature_columns": [
+    "month_sin",
+    "month_cos"
+  ],
+  "drift": {
+    "detected": true,
+    "max_psi": 1.67106,
+    "drifted_features": [
+      "month_sin",
+      "month_cos"
+    ],
+    "psi_scores": {
+      "month_sin": 1.669162,
+      "month_cos": 1.67106
+    }
+  },
+  "scaler_status": "UPDATED",
+  "outputs": {
+    "features_latest": "/content/drive/MyDrive/BD_ML_VT/live_data/features_latest.csv",
+    "merged_dataset": "/content/drive/MyDrive/BD_ML_VT/live_data/merged_dataset.csv",
+    "feature_log": "/content/drive/MyDrive/BD_ML_VT/logs/feature_engineering_log.csv",
+    "scaler_updated": "/content/drive/MyDrive/BD_ML_VT/processed/scaler_params_updated.json"
+  }
+}

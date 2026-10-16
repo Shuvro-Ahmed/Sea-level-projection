@@ -1,0 +1,155 @@
+{
+  "report_timestamp": "20260312_114719",
+  "baseline_date": "2022-12-31",
+  "system_risk_level": "GREEN",
+  "any_acceleration": false,
+  "countries": {
+    "Bangladesh": {
+      "country": "Bangladesh",
+      "assessment_date": "20260312_114719",
+      "error": null,
+      "last_observation_date": "2024-12-01",
+      "current_rise_mm": 108.677,
+      "n_observations": 34,
+      "risk_level": "GREEN",
+      "thresholds_mm": {
+        "amber": 150,
+        "red": 250,
+        "critical": 350
+      },
+      "acceleration": {
+        "acceleration_detected": false,
+        "z_score": 1.6008,
+        "recent_slope_mm_yr": 68.1268,
+        "historical_mean_slope": -33.3253,
+        "historical_std_slope": 63.3761,
+        "window_months": 24,
+        "note": null
+      },
+      "compound_risk": {
+        "compound_prob_annual": 0.091927,
+        "slr_exceedance_prob": 0.533512,
+        "surge_exceedance_prob": 0.1,
+        "projected_slr_mm": 254.28,
+        "projection_year": 2050,
+        "theta_copula": 2.0,
+        "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+      },
+      "time_to_threshold": {
+        "years_to_amber": 7.4,
+        "years_to_red": 25.2,
+        "years_to_critical": 43.1,
+        "next_threshold": "amber",
+        "years_to_next": 7.4,
+        "rate_used_mm_yr": 5.6
+      },
+      "meta": {
+        "population_at_risk": 35000000,
+        "gdp_at_risk_bn_usd": 12.4,
+        "agri_exposure_km2": 14000,
+        "vlm_mm_yr": -2.0,
+        "cvi_score": 0.847
+      }
+    },
+    "Vietnam": {
+      "country": "Vietnam",
+      "assessment_date": "20260312_114719",
+      "error": null,
+      "last_observation_date": "2022-12-01",
+      "current_rise_mm": 0.0,
+      "n_observations": 18,
+      "risk_level": "GREEN",
+      "thresholds_mm": {
+        "amber": 100,
+        "red": 200,
+        "critical": 300
+      },
+      "acceleration": {
+        "acceleration_detected": false,
+        "z_score": 0.0,
+        "recent_slope_mm_yr": null,
+        "historical_mean_slope": null,
+        "historical_std_slope": null,
+        "window_months": 24,
+        "note": "Insufficient data for acceleration detection."
+      },
+      "compound_risk": {
+        "compound_prob_annual": 0.1,
+        "slr_exceedance_prob": 0.998255,
+        "surge_exceedance_prob": 0.1,
+        "projected_slr_mm": 481.0,
+        "projection_year": 2050,
+        "theta_copula": 2.0,
+        "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+      },
+      "time_to_threshold": {
+        "years_to_amber": 5.4,
+        "years_to_red": 10.8,
+        "years_to_critical": 16.2,
+        "next_threshold": "amber",
+        "years_to_next": 5.4,
+        "rate_used_mm_yr": 18.5
+      },
+      "meta": {
+        "population_at_risk": 20000000,
+        "gdp_at_risk_bn_usd": 8.7,
+        "agri_exposure_km2": 9500,
+        "vlm_mm_yr": -8.9,
+        "cvi_score": 0.793
+      }
+    },
+    "Maldives": {
+      "country": "Maldives",
+      "assessment_date": "20260312_114719",
+      "error": null,
+      "last_observation_date": "2022-12-01",
+      "current_rise_mm": 0.0,
+      "n_observations": 18,
+      "risk_level": "GREEN",
+      "thresholds_mm": {
+        "amber": 50,
+        "red": 80,
+        "critical": 100
+      },
+      "acceleration": {
+        "acceleration_detected": false,
+        "z_score": 0.0,
+        "recent_slope_mm_yr": null,
+        "historical_mean_slope": null,
+        "historical_std_slope": null,
+        "window_months": 24,
+        "note": "Insufficient data for acceleration detection."
+      },
+      "compound_risk": {
+        "compound_prob_annual": 0.2,
+        "slr_exceedance_prob": 0.99976,
+        "surge_exceedance_prob": 0.2,
+        "projected_slr_mm": 265.2,
+        "projection_year": 2050,
+        "theta_copula": 2.0,
+        "method": "Gumbel copula (theta=2.0, SSP2-4.5)"
+      },
+      "time_to_threshold": {
+        "years_to_amber": 4.9,
+        "years_to_red": 7.8,
+        "years_to_critical": 9.8,
+        "next_threshold": "amber",
+        "years_to_next": 4.9,
+        "rate_used_mm_yr": 10.2
+      },
+      "meta": {
+        "population_at_risk": 500000,
+        "gdp_at_risk_bn_usd": 0.9,
+        "agri_exposure_km2": 80,
+        "vlm_mm_yr": 0.0,
+        "cvi_score": 0.921
+      }
+    }
+  },
+  "risk_levels_summary": {
+    "Bangladesh": "GREEN",
+    "Vietnam": "GREEN",
+    "Maldives": "GREEN"
+  },
+  "pipeline_version": "HyperSLR-Cell36"
+}

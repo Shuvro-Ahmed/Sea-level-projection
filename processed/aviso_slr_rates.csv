@@ -1,0 +1,4 @@
+Country,AVISO_rate_mm_yr,AVISO_CI95,AVISO_R2,AVISO_pvalue,TideGauge_mm_yr,VLM_estimate_mm_yr
+Bangladesh,3.658,1.596,0.0517,9e-06,5.15,1.4920000000000004
+Vietnam,4.09,1.287,0.0948,0.0,1.05,-3.04
+Maldives,3.694,0.409,0.4589,0.0,2.65,-1.044

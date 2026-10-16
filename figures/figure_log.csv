@@ -1,0 +1,97 @@
+run_timestamp,fig_id,title,format,path,size_kb
+20260312_123330,test_fig,Test,pdf,/tmp/tmpcerxpmjt/test_fig.pdf,6.3
+20260312_123330,test_fig,Test,png,/tmp/tmpcerxpmjt/test_fig.png,23.6
+20260312_123330,meta_test,Meta test,pdf,/tmp/tmpcerxpmjt/meta_test.pdf,6.2
+20260312_123330,meta_test,Meta test,png,/tmp/tmpcerxpmjt/meta_test.png,12.5
+20260312_123330,fig02,Current risk levels and time-to-threshold projections,pdf,/tmp/tmpcerxpmjt/fig02.pdf,20.5
+20260312_123330,fig02,Current risk levels and time-to-threshold projections,png,/tmp/tmpcerxpmjt/fig02.png,97.4
+20260312_123330,fig03,Compound annual flood probability heatmap,pdf,/tmp/tmpcerxpmjt/fig03.pdf,28.3
+20260312_123330,fig03,Compound annual flood probability heatmap,png,/tmp/tmpcerxpmjt/fig03.png,66.5
+20260312_123330,fig04,SLR acceleration detection and PINN architecture,pdf,/tmp/tmpcerxpmjt/fig04.pdf,30.0
+20260312_123330,fig04,SLR acceleration detection and PINN architecture,png,/tmp/tmpcerxpmjt/fig04.png,223.4
+20260312_123330,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,pdf,/tmp/tmpcerxpmjt/fig05.pdf,20.7
+20260312_123330,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,png,/tmp/tmpcerxpmjt/fig05.png,78.1
+20260312_123330,fig06,Continual learning RMSE improvement,pdf,/tmp/tmpcerxpmjt/fig06.pdf,15.0
+20260312_123330,fig06,Continual learning RMSE improvement,png,/tmp/tmpcerxpmjt/fig06.png,29.8
+20260312_123330,fig07,HyperSLR digital twin framework overview,pdf,/tmp/tmpcerxpmjt/fig07.pdf,24.2
+20260312_123330,fig07,HyperSLR digital twin framework overview,png,/tmp/tmpcerxpmjt/fig07.png,139.3
+20260312_123330,fig01,Observed and projected sea-level rise above 2022 baseline,pdf,/tmp/tmpcerxpmjt/fig01.pdf,28.4
+20260312_123330,fig01,Observed and projected sea-level rise above 2022 baseline,png,/tmp/tmpcerxpmjt/fig01.png,209.4
+20260312_123330,fig01,Observed and projected sea-level rise above 2022 baseline,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig01.pdf,33.1
+20260312_123330,fig01,Observed and projected sea-level rise above 2022 baseline,png,/content/drive/MyDrive/BD_ML_VT/figures/fig01.png,195.7
+20260312_123330,fig02,Current risk levels and time-to-threshold projections,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig02.pdf,20.5
+20260312_123330,fig02,Current risk levels and time-to-threshold projections,png,/content/drive/MyDrive/BD_ML_VT/figures/fig02.png,97.4
+20260312_123330,fig03,Compound annual flood probability heatmap,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig03.pdf,27.6
+20260312_123330,fig03,Compound annual flood probability heatmap,png,/content/drive/MyDrive/BD_ML_VT/figures/fig03.png,66.4
+20260312_123330,fig04,SLR acceleration detection and PINN architecture,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig04.pdf,35.4
+20260312_123330,fig04,SLR acceleration detection and PINN architecture,png,/content/drive/MyDrive/BD_ML_VT/figures/fig04.png,190.0
+20260312_123330,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig05.pdf,21.4
+20260312_123330,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,png,/content/drive/MyDrive/BD_ML_VT/figures/fig05.png,87.3
+20260312_123330,fig06,Continual learning RMSE improvement — Bangladesh,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig06.pdf,14.8
+20260312_123330,fig06,Continual learning RMSE improvement — Bangladesh,png,/content/drive/MyDrive/BD_ML_VT/figures/fig06.png,32.4
+20260312_123330,fig07,HyperSLR digital twin framework overview,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig07.pdf,24.2
+20260312_123330,fig07,HyperSLR digital twin framework overview,png,/content/drive/MyDrive/BD_ML_VT/figures/fig07.png,139.3
+20260312_123757,test_fig,Test,pdf,/tmp/tmpqkf4n2z_/test_fig.pdf,6.3
+20260312_123757,test_fig,Test,png,/tmp/tmpqkf4n2z_/test_fig.png,23.6
+20260312_123757,meta_test,Meta test,pdf,/tmp/tmpqkf4n2z_/meta_test.pdf,6.2
+20260312_123757,meta_test,Meta test,png,/tmp/tmpqkf4n2z_/meta_test.png,12.5
+20260312_123757,fig02,Current risk levels and time-to-threshold projections,pdf,/tmp/tmpqkf4n2z_/fig02.pdf,20.5
+20260312_123757,fig02,Current risk levels and time-to-threshold projections,png,/tmp/tmpqkf4n2z_/fig02.png,97.4
+20260312_123757,fig03,Compound annual flood probability heatmap,pdf,/tmp/tmpqkf4n2z_/fig03.pdf,28.3
+20260312_123757,fig03,Compound annual flood probability heatmap,png,/tmp/tmpqkf4n2z_/fig03.png,66.5
+20260312_123757,fig04,SLR acceleration detection and PINN architecture,pdf,/tmp/tmpqkf4n2z_/fig04.pdf,30.0
+20260312_123757,fig04,SLR acceleration detection and PINN architecture,png,/tmp/tmpqkf4n2z_/fig04.png,225.0
+20260312_123757,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,pdf,/tmp/tmpqkf4n2z_/fig05.pdf,20.9
+20260312_123757,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,png,/tmp/tmpqkf4n2z_/fig05.png,77.4
+20260312_123757,fig06,Continual learning RMSE improvement,pdf,/tmp/tmpqkf4n2z_/fig06.pdf,15.0
+20260312_123757,fig06,Continual learning RMSE improvement,png,/tmp/tmpqkf4n2z_/fig06.png,29.8
+20260312_123757,fig07,HyperSLR digital twin framework overview,pdf,/tmp/tmpqkf4n2z_/fig07.pdf,24.2
+20260312_123757,fig07,HyperSLR digital twin framework overview,png,/tmp/tmpqkf4n2z_/fig07.png,139.3
+20260312_123757,fig01,Observed and projected sea-level rise above 2022 baseline,pdf,/tmp/tmpqkf4n2z_/fig01.pdf,28.3
+20260312_123757,fig01,Observed and projected sea-level rise above 2022 baseline,png,/tmp/tmpqkf4n2z_/fig01.png,210.9
+20260312_123757,fig01,Observed and projected sea-level rise above 2022 baseline,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig01.pdf,33.1
+20260312_123757,fig01,Observed and projected sea-level rise above 2022 baseline,png,/content/drive/MyDrive/BD_ML_VT/figures/fig01.png,195.7
+20260312_123757,fig02,Current risk levels and time-to-threshold projections,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig02.pdf,20.5
+20260312_123757,fig02,Current risk levels and time-to-threshold projections,png,/content/drive/MyDrive/BD_ML_VT/figures/fig02.png,97.4
+20260312_123757,fig03,Compound annual flood probability heatmap,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig03.pdf,27.6
+20260312_123757,fig03,Compound annual flood probability heatmap,png,/content/drive/MyDrive/BD_ML_VT/figures/fig03.png,66.4
+20260312_123757,fig04,SLR acceleration detection and PINN architecture,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig04.pdf,35.4
+20260312_123757,fig04,SLR acceleration detection and PINN architecture,png,/content/drive/MyDrive/BD_ML_VT/figures/fig04.png,190.0
+20260312_123757,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig05.pdf,21.4
+20260312_123757,fig05,Feature sensitivity (|Pearson r|) with sea-level anomaly,png,/content/drive/MyDrive/BD_ML_VT/figures/fig05.png,87.3
+20260312_123757,fig06,Continual learning RMSE improvement — Bangladesh,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig06.pdf,14.8
+20260312_123757,fig06,Continual learning RMSE improvement — Bangladesh,png,/content/drive/MyDrive/BD_ML_VT/figures/fig06.png,32.4
+20260312_123757,fig07,HyperSLR digital twin framework overview,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig07.pdf,24.2
+20260312_123757,fig07,HyperSLR digital twin framework overview,png,/content/drive/MyDrive/BD_ML_VT/figures/fig07.png,139.3
+20260312_124900,t09_fig,Test,pdf,/tmp/tmpu3dwf63q/t09_fig.pdf,6.3
+20260312_124900,t09_fig,Test,png,/tmp/tmpu3dwf63q/t09_fig.png,23.6
+20260312_124900,t10_fig,Meta,pdf,/tmp/tmpu3dwf63q/t10_fig.pdf,6.2
+20260312_124900,t10_fig,Meta,png,/tmp/tmpu3dwf63q/t10_fig.png,12.5
+20260312_124900,fig02,Current risk levels and time-to-threshold,pdf,/tmp/tmpu3dwf63q/fig02.pdf,20.4
+20260312_124900,fig02,Current risk levels and time-to-threshold,png,/tmp/tmpu3dwf63q/fig02.png,77.5
+20260312_124900,fig03,Compound annual flood probability heatmap,pdf,/tmp/tmpu3dwf63q/fig03.pdf,27.9
+20260312_124900,fig03,Compound annual flood probability heatmap,png,/tmp/tmpu3dwf63q/fig03.png,61.2
+20260312_124900,fig04,SLR acceleration and PINN architecture,pdf,/tmp/tmpu3dwf63q/fig04.pdf,30.0
+20260312_124900,fig04,SLR acceleration and PINN architecture,png,/tmp/tmpu3dwf63q/fig04.png,198.5
+20260312_124900,fig05,Feature sensitivity with sea-level anomaly,pdf,/tmp/tmpu3dwf63q/fig05.pdf,20.3
+20260312_124900,fig05,Feature sensitivity with sea-level anomaly,png,/tmp/tmpu3dwf63q/fig05.png,69.6
+20260312_124900,fig06,Continual learning RMSE improvement,pdf,/tmp/tmpu3dwf63q/fig06.pdf,15.0
+20260312_124900,fig06,Continual learning RMSE improvement,png,/tmp/tmpu3dwf63q/fig06.png,29.8
+20260312_124900,fig07,HyperSLR digital twin framework overview,pdf,/tmp/tmpu3dwf63q/fig07.pdf,24.1
+20260312_124900,fig07,HyperSLR digital twin framework overview,png,/tmp/tmpu3dwf63q/fig07.png,139.3
+20260312_124900,fig01,Observed SLR above 2022 baseline,pdf,/tmp/tmpu3dwf63q/fig01.pdf,25.8
+20260312_124900,fig01,Observed SLR above 2022 baseline,png,/tmp/tmpu3dwf63q/fig01.png,195.3
+20260312_124900,fig01,Observed SLR above 2022 baseline,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig01.pdf,30.6
+20260312_124900,fig01,Observed SLR above 2022 baseline,png,/content/drive/MyDrive/BD_ML_VT/figures/fig01.png,182.2
+20260312_124900,fig02,Current risk levels and time-to-threshold,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig02.pdf,20.4
+20260312_124900,fig02,Current risk levels and time-to-threshold,png,/content/drive/MyDrive/BD_ML_VT/figures/fig02.png,77.5
+20260312_124900,fig03,Compound annual flood probability heatmap,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig03.pdf,27.2
+20260312_124900,fig03,Compound annual flood probability heatmap,png,/content/drive/MyDrive/BD_ML_VT/figures/fig03.png,61.1
+20260312_124900,fig04,SLR acceleration and PINN architecture,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig04.pdf,35.4
+20260312_124900,fig04,SLR acceleration and PINN architecture,png,/content/drive/MyDrive/BD_ML_VT/figures/fig04.png,182.4
+20260312_124900,fig05,Feature sensitivity with sea-level anomaly,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig05.pdf,20.4
+20260312_124900,fig05,Feature sensitivity with sea-level anomaly,png,/content/drive/MyDrive/BD_ML_VT/figures/fig05.png,70.6
+20260312_124900,fig06,Continual learning RMSE improvement,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig06.pdf,14.6
+20260312_124900,fig06,Continual learning RMSE improvement,png,/content/drive/MyDrive/BD_ML_VT/figures/fig06.png,30.1
+20260312_124900,fig07,HyperSLR digital twin framework overview,pdf,/content/drive/MyDrive/BD_ML_VT/figures/fig07.pdf,24.1
+20260312_124900,fig07,HyperSLR digital twin framework overview,png,/content/drive/MyDrive/BD_ML_VT/figures/fig07.png,139.3

@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "20260308_114818",
+  "cmems": {
+    "success": true,
+    "estimated_records": 0,
+    "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/cmems_latest.nc"
+  },
+  "psmsl": {
+    "success": true,
+    "total_records": 0,
+    "records_by_country": {},
+    "date_ranges": {},
+    "output_file": "/content/drive/MyDrive/BD_ML_VT/live_data/psmsl_latest.csv"
+  },
+  "validation": {
+    "all_passed": false,
+    "by_country": {}
+  },
+  "log_file": "/content/drive/MyDrive/BD_ML_VT/logs/ingestion_log.csv"
+}

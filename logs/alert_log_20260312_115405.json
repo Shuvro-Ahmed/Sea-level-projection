@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "20260312_115405",
+  "alerts": [
+    {
+      "alert_id": "20260312_115325_PIPELINE_FAILURE_Cell36",
+      "timestamp": "20260312_115325",
+      "alert_class": "PIPELINE_FAILURE",
+      "severity": "CRITICAL",
+      "country": "SYSTEM",
+      "title": "Pipeline halted at Cell 36: Risk Threshold Detection",
+      "detail": "HyperSLR pipeline run 20260312_115325 failed at step Cell 36 (Risk Threshold Detection). Runtime before failure: 0.02s. Prior steps completed: [33, 34, 35]. Error (first 300 chars): Traceback (most recent call last):\n  File \"/tmp/ipykernel_201/3709950008.py\", line 269, in execute_step\n    module      = _load_module_from_path(cell_num, module_path)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_201/3709950008.py\", line 224, in _load_module",
+      "metrics": {
+        "failed_cell": 36,
+        "failed_step": "Risk Threshold Detection",
+        "error_excerpt": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_201/3709950008.py\", line 269, in execute_step\n    module      = _load_module_from_path(cell_num, module_path)\n                  ^^^^^^^^^^^^^^"
+      },
+      "dispatched": []
+    }
+  ]
+}

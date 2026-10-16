@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "20260312_112004",
+  "alerts": [
+    {
+      "alert_id": "20260312_112004_PIPELINE_FAILURE_Cell901",
+      "timestamp": "20260312_112004",
+      "alert_class": "PIPELINE_FAILURE",
+      "severity": "CRITICAL",
+      "country": "SYSTEM",
+      "title": "Pipeline halted at Cell 901: Fail First",
+      "detail": "HyperSLR pipeline run 20260312_112004 failed at step Cell 901 (Fail First). Runtime before failure: 0.0s. Prior steps completed: []. Error (first 300 chars): Traceback (most recent call last):\n  File \"/tmp/ipykernel_201/3709950008.py\", line 274, in execute_step\n    return_value = fn()\n                   ^^^^\n  File \"/tmp/tmp_03xrdga/cell_halt1.py\", line 1, in run_halt1\n    def run_halt1(): raise RuntimeError('step1 fail')\n                     ^^^^^^^^^^^",
+      "metrics": {
+        "failed_cell": 901,
+        "failed_step": "Fail First",
+        "error_excerpt": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_201/3709950008.py\", line 274, in execute_step\n    return_value = fn()\n                   ^^^^\n  File \"/tmp/tmp_03xrdga/cell_halt1.py\", line 1,"
+      },
+      "dispatched": []
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "fig_id": "t09_fig",
+    "title": "Test",
+    "caption": "Caption",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/t09_fig.pdf",
+      "/tmp/tmpu3dwf63q/t09_fig.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "t10_fig",
+    "title": "Meta",
+    "caption": "Caption",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/t10_fig.pdf",
+      "/tmp/tmpu3dwf63q/t10_fig.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig02",
+    "title": "Current risk levels and time-to-threshold",
+    "caption": "Risk levels and years to threshold per country.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig02.pdf",
+      "/tmp/tmpu3dwf63q/fig02.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig03",
+    "title": "Compound annual flood probability heatmap",
+    "caption": "Gumbel copula compound flood probability by year.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig03.pdf",
+      "/tmp/tmpu3dwf63q/fig03.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig04",
+    "title": "SLR acceleration and PINN architecture",
+    "caption": "Acceleration z-score and dual-head PINN schematic.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig04.pdf",
+      "/tmp/tmpu3dwf63q/fig04.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig05",
+    "title": "Feature sensitivity with sea-level anomaly",
+    "caption": "|Pearson r| between features and slrv2.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig05.pdf",
+      "/tmp/tmpu3dwf63q/fig05.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig06",
+    "title": "Continual learning RMSE improvement",
+    "caption": "CL log not yet available.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig06.pdf",
+      "/tmp/tmpu3dwf63q/fig06.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig07",
+    "title": "HyperSLR digital twin framework overview",
+    "caption": "Full pipeline DAG from ingestion to orchestration.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig07.pdf",
+      "/tmp/tmpu3dwf63q/fig07.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig01",
+    "title": "Observed SLR above 2022 baseline",
+    "caption": "Cumulative SLR above 2022-12-31 baseline.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/tmp/tmpu3dwf63q/fig01.pdf",
+      "/tmp/tmpu3dwf63q/fig01.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig01",
+    "title": "Observed SLR above 2022 baseline",
+    "caption": "Cumulative SLR above 2022-12-31 baseline.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig01.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig01.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig02",
+    "title": "Current risk levels and time-to-threshold",
+    "caption": "Risk levels and years to threshold per country.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig02.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig02.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig03",
+    "title": "Compound annual flood probability heatmap",
+    "caption": "Gumbel copula compound flood probability by year.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig03.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig03.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig04",
+    "title": "SLR acceleration and PINN architecture",
+    "caption": "Acceleration z-score and dual-head PINN schematic.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig04.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig04.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig05",
+    "title": "Feature sensitivity with sea-level anomaly",
+    "caption": "|Pearson r| between features and slrv2.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig05.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig05.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig06",
+    "title": "Continual learning RMSE improvement",
+    "caption": "RMSE before and after CL updates for Bangladesh.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig06.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig06.png"
+    ],
+    "timestamp": "20260312_124900"
+  },
+  {
+    "fig_id": "fig07",
+    "title": "HyperSLR digital twin framework overview",
+    "caption": "Full pipeline DAG from ingestion to orchestration.",
+    "formats": [
+      "pdf",
+      "png"
+    ],
+    "paths": [
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig07.pdf",
+      "/content/drive/MyDrive/BD_ML_VT/figures/fig07.png"
+    ],
+    "timestamp": "20260312_124900"
+  }
+]

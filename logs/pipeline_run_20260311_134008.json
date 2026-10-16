@@ -1,0 +1,25 @@
+{
+  "run_timestamp": "20260311_134008",
+  "pipeline_status": "FAILED",
+  "halt_at_cell": 901,
+  "total_runtime_s": 0.03,
+  "steps_total": 2,
+  "steps_executed": 1,
+  "steps_passed": 0,
+  "steps_failed": 1,
+  "step_results": [
+    {
+      "cell": 901,
+      "name": "Fail First",
+      "status": "FAIL",
+      "start_ts": "2026-03-11T13:40:08.815297+00:00",
+      "end_ts": "2026-03-11T13:40:08.819337+00:00",
+      "runtime_s": 0.0,
+      "stdout": "",
+      "stderr": "",
+      "checksums": {},
+      "error": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_136/3301074570.py\", line 274, in execute_step\n    return_value = fn()\n                   ^^^^\n  File \"/tmp/tmpd2kjseme/cell_halt1.py\", line 1, in run_halt1\n    def run_halt1(): raise RuntimeError('step1 fail')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: step1 fail\n",
+      "return_value": null
+    }
+  ]
+}

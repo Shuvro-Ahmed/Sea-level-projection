@@ -1,0 +1,28 @@
+timestamp,provider,status,detail,error
+20260310_123337,test-provider,TEST,unit test row,
+20260310_123337,gemini,FAILED,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.
+20260310_123337,groq,SKIPPED,API key not configured.,
+20260310_123337,offline,SUCCESS,Offline template used.,
+20260310_163143,test-provider,TEST,unit test row,
+20260310_163143,gemini,FAILED,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.
+20260310_163143,groq,SKIPPED,API key not configured.,
+20260310_163143,offline,SUCCESS,Offline template used.,
+20260311_113906,test-provider,TEST,unit test row,
+20260311_113906,gemini,FAILED,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.
+20260311_113906,groq,SKIPPED,API key not configured.,
+20260311_113906,offline,SUCCESS,Offline template used.,
+20260312_111915,test-provider,TEST,unit test row,
+20260312_111915,gemini,FAILED,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.,400 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: API key not valid. Please pass a valid API key.
+20260312_111915,groq,SKIPPED,API key not configured.,
+20260312_111915,offline,SUCCESS,Offline template used.,
+20260312_114725,test-provider,TEST,unit test row,
+20260312_114725,gemini,FAILED,Unterminated string starting at: line 53 column 11 (char 3846),Unterminated string starting at: line 53 column 11 (char 3846)
+20260312_114725,groq,SKIPPED,API key not configured.,
+20260312_114725,offline,SUCCESS,Offline template used.,
+20260312_120543,test-provider,TEST,unit test row,
+20260312_120543,gemini,FAILED,Unterminated string starting at: line 32 column 9 (char 1950),Unterminated string starting at: line 32 column 9 (char 1950)
+20260312_120543,groq,SKIPPED,API key not configured.,
+20260312_120543,offline,SUCCESS,Offline template used.,
+20260312_120543,gemini,FAILED,Unterminated string starting at: line 13 column 22 (char 395),Unterminated string starting at: line 13 column 22 (char 395)
+20260312_120543,groq,SKIPPED,API key not configured.,
+20260312_120543,offline,SUCCESS,Offline template used.,
